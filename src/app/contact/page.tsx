@@ -12,7 +12,7 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:mollaoglueren@gmail.com?subject=İletişim Formu: ${formData.name}&body=${formData.message}%0D%0A%0D%0AGönderen: ${formData.email}`;
+    window.location.href = `mailto:eren.mollaoglu@outlook.com?subject=İletişim Formu: ${formData.name}&body=${formData.message}%0D%0A%0D%0AGönderen: ${formData.email}`;
   };
 
   return (
