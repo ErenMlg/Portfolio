@@ -23,7 +23,7 @@ export default function Home() {
               Jr. Android Developer
             </h3>
             <p className="description">
-              Mobil uygulama geliştirme konusunda tutkulu, yenilikçi çözümler üreten ve sürekli öğrenmeye odaklı bir yazılım geliştiricisi.
+              Mobil uygulama geliştirme konusunda tutkulu, yenilikçi çözümler üreten ve sürekli öğrenmeye odaklı bir yazılım mühendisi.
             </p>
             <div className="cta-buttons">
               <Link href="/projects" className="cta-button primary">
