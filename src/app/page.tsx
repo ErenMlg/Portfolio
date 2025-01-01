@@ -37,14 +37,16 @@ export default function Home() {
           <div className="profile-section">
             <div className="profile-background"></div>
             <div className="profile-card">
-              <div className="profile-image relative">
+              <div className="profile-image relative w-full h-[280px] sm:h-[320px] md:h-[360px]">
                 {imageLoading && <LoadingSpinner />}
                 <Image
                   src={getImagePath('/profile.jpg')}
                   alt="Eren Mollaoğlu"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   onLoadingComplete={() => setImageLoading(false)}
+                  sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, 360px"
+                  priority
                 />
               </div>
               <div className="social-links">
