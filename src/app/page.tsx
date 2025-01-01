@@ -10,7 +10,6 @@ export default function Home() {
   const [imageLoading, setImageLoading] = useState(true);
 
   return (
-<<<<<<< HEAD
     <main className="min-h-screen bg-gray-900">
       <section className="hero-section py-8 px-4">
         <div className="container mx-auto max-w-6xl">
@@ -40,46 +39,6 @@ export default function Home() {
                     <i className="fab fa-linkedin"></i>
                   </a>
                 </div>
-=======
-    <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="container">
-          <div className="intro-text">
-            <h2 className="greeting">Merhaba, Ben</h2>
-            <h1 className="name">
-              Eren Mollaoğlu
-            </h1>
-            <h3 className="title">
-              Jr. Android Developer
-            </h3>
-            <p className="description">
-              Mobil uygulama geliştirme konusunda tutkulu, yenilikçi çözümler üreten ve sürekli öğrenmeye odaklı bir yazılım geliştiricisi.
-            </p>
-            <div className="cta-buttons">
-              <Link href="/projects" className="cta-button primary">
-                Projelerimi Gör
-              </Link>
-              <Link href="/contact" className="cta-button secondary">
-                İletişime Geç
-              </Link>
-            </div>
-          </div>
-          <div className="profile-section">
-            <div className="profile-background"></div>
-            <div className="profile-card">
-              <div className="profile-image relative w-full h-[280px] sm:h-[320px] md:h-[360px]">
-                {imageLoading && <LoadingSpinner />}
-                <Image
-                  src={getImagePath('/profile.jpg')}
-                  alt="Eren Mollaoğlu"
-                  fill
-                  className="object-cover object-center"
-                  onLoadingComplete={() => setImageLoading(false)}
-                  sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, 360px"
-                  priority
-                />
->>>>>>> parent of ffd9cc8 (Update page.tsx)
               </div>
             </div>
 
