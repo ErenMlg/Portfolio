@@ -1,90 +1,95 @@
 'use client';
 
-import projectsData from '@/data/projects.json';
-import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
-import { getImagePath } from '../../../utils/imageUtils';
-import LoadingSpinner from '@/components/LoadingSpinner';
+import Image from 'next/image';
+import { getImagePath } from '../../utils/imageUtils';
 
-interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  githubLink: string;
-  tags: string[];
-}
-
-const DEFAULT_IMAGE = getImagePath('/projects/default.png');
-
-export default function ProjectsPage() {
-  const [loadingImages, setLoadingImages] = useState<{ [key: string]: boolean }>({});
-
-  const handleImageLoad = (projectId: string) => {
-    setLoadingImages(prev => ({ ...prev, [projectId]: false }));
-  };
-
+export default function Home() {
   return (
-    <div className="page-container min-h-screen bg-gray-900">
-      <div className="navbar bg-gray-800">
-        <div className="container mx-auto">
-          <div className="navbar-content flex items-center p-4">
-            <Link href="/" className="back-button text-white hover:text-gray-300">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </Link>
-            <h1 className="page-title text-2xl font-bold text-white ml-4">Projelerim</h1>
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="container">
+          <div className="intro-text">
+            <h2 className="greeting">Merhaba, Ben</h2>
+            <h1 className="name">
+              Eren Mollaoğlu
+            </h1>
+            <h3 className="title">
+              Jr. Android Developer
+            </h3>
+            <p className="description">
+              Mobil uygulama geliştirme konusunda tutkulu, yenilikçi çözümler üreten ve sürekli öğrenmeye odaklı bir yazılım geliştiricisi.
+            </p>
+            <div className="cta-buttons">
+              <Link href="/projects" className="cta-button primary">
+                Projelerimi Gör
+              </Link>
+              <Link href="/contact" className="cta-button secondary">
+                İletişime Geç
+              </Link>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto px-4 py-12">
-        <div className="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.projects.map((project: Project) => (
-            <div 
-              key={project.id} 
-              className="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg"
-            >
-              <div className="project-image-container relative h-48">
-                {loadingImages[project.id] !== false && <LoadingSpinner />}
+          <div className="profile-section">
+            <div className="profile-background"></div>
+            <div className="profile-card">
+              <div className="profile-image">
                 <Image
-                  src={project.image ? getImagePath(project.image) : DEFAULT_IMAGE}
-                  alt={project.title}
+                  src={getImagePath('/profile.jpg')}
+                  alt="Eren Mollaoğlu"
                   fill
                   className="object-cover"
-                  onLoadingComplete={() => handleImageLoad(project.id)}
+                  loading="lazy"
+                  decoding="async"
                 />
-                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" 
-                   className="project-overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+              </div>
+              <div className="social-links">
+                <a href="https://github.com/ErenMlg" target="_blank" rel="noopener noreferrer" className="social-link">
+                  <i className="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/MollaogluEren" target="_blank" rel="noopener noreferrer" className="social-link">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mollaoglueren" target="_blank" rel="noopener noreferrer" className="social-link">
+                  <i className="fab fa-linkedin"></i>
                 </a>
               </div>
-              <div className="project-content p-6">
-                <h3 className="project-title text-xl font-bold text-white mb-2">
-                  {project.title}
-                </h3>
-                <p className="project-description text-gray-300 mb-4">
-                  {project.description}
-                </p>
-                <div className="project-tags flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="project-tag px-3 py-1 bg-gray-700 text-green-400 rounded-full text-sm"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      {/* Expertise Section */}
+      <section className="skills-section">
+        <div className="container">
+          <h2 className="section-title">
+            Uzmanlık Alanlarım
+          </h2>
+          <div className="skills-grid">
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fab fa-android"></i>
+              </div>
+              <h3>Android Geliştirme</h3>
+              <p>Kotlin, Jetpack Compose, XML, Multiplatform</p>
+            </div>
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Cross Platform</h3>
+              <p>Flutter, Dart</p>
+            </div>
+            <div className="skill-card">
+              <div className="skill-icon">
+                <i className="fas fa-brain"></i>
+              </div>
+              <h3>Yapay Zeka</h3>
+              <p>TensorFlow, Keras, HuggingFace, Python</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
-} 
+}
