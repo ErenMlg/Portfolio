@@ -2,9 +2,13 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react';
 import { getImagePath } from '../../utils/imageUtils';
+import LoadingSpinner from '@/components/LoadingSpinner';
 
 export default function Home() {
+  const [imageLoading, setImageLoading] = useState(true);
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -33,14 +37,14 @@ export default function Home() {
           <div className="profile-section">
             <div className="profile-background"></div>
             <div className="profile-card">
-              <div className="profile-image">
+              <div className="profile-image relative">
+                {imageLoading && <LoadingSpinner />}
                 <Image
                   src={getImagePath('/profile.jpg')}
                   alt="Eren Mollaoğlu"
                   fill
                   className="object-cover"
-                  loading="lazy"
-                  decoding="async"
+                  onLoadingComplete={() => setImageLoading(false)}
                 />
               </div>
               <div className="social-links">
