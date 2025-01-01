@@ -1,7 +1,8 @@
 export const getImagePath = (path: string) => {
   // For GitHub Pages deployment
   const basePath = '/Portfolio';
-  // Ensure path starts with a forward slash
-  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
-  return `${basePath}${normalizedPath}`;
+  // Remove any leading slash from the path
+  const normalizedPath = path.startsWith('/') ? path.slice(1) : path;
+  // Combine basePath with normalizedPath
+  return `${basePath}/${normalizedPath}`;
 } 
