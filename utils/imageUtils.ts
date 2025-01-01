@@ -1,5 +1,7 @@
 export const getImagePath = (path: string) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
+  // For GitHub Pages deployment
+  const basePath = '/Portfolio';
+  // Ensure path starts with a forward slash
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
   return `${basePath}${normalizedPath}`;
 } 
