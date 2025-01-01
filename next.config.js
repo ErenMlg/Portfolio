@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/repo-adı', // Github repo adınızı buraya yazın
+  basePath: '/Portfolio', // Github repo adınızı buraya yazın
 }
 
 module.exports = nextConfig 
