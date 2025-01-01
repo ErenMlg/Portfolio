@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { getImagePath } from '../../utils/imageUtils';
+import { getImagePath } from '../../../utils/imageUtils';
 
 export default function Home() {
   return (
