@@ -9,8 +9,17 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Eren Mollaoğlu - Portfolio',
-  description: 'Android Developer Portfolio',
+  title: 'Eren Mollaoğlu - Android Developer',
+  description: 'Mobil uygulama geliştirme konusunda tutkulu, yenilikçi çözümler üreten ve sürekli öğrenmeye odaklı bir yazılım geliştiricisi.',
+  icons: {
+    icon: [
+      {
+        url: '/android-icon.svg',
+        href: '/android-icon.svg',
+        type: 'image/svg+xml',
+      }
+    ],
+  },
 };
 
 export default function RootLayout({
