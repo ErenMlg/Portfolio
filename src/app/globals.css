@@ -87,19 +87,42 @@
 
   /* CTA Buttons */
   .cta-buttons {
-    @apply flex gap-6 mt-10 flex-col sm:flex-row;
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .cta-button {
-    @apply px-8 py-3 rounded-xl font-medium transition-all duration-300 hover:-translate-y-1 no-underline;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 160px;
   }
 
   .cta-button.primary {
-    @apply bg-[var(--android-green)] text-[var(--android-dark)] hover:shadow-[0_8px_30px_rgb(61,220,132,0.3)];
+    background-color: #3DDC84;
+    color: #000;
+  }
+
+  .cta-button.primary:hover {
+    background-color: #32b76e;
   }
 
   .cta-button.secondary {
-    @apply bg-transparent text-white border-2 border-[var(--android-green)] hover:bg-[var(--android-green)] hover:text-[var(--android-dark)] hover:shadow-[0_8px_30px_rgb(61,220,132,0.3)];
+    background-color: transparent;
+    border: 2px solid #3DDC84;
+    color: #3DDC84;
+  }
+
+  .cta-button.secondary:hover {
+    background-color: #3DDC84;
+    color: #000;
   }
 
   /* Skills Section */
