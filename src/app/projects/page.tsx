@@ -1,7 +1,11 @@
+'use client';
+
 import projectsData from '@/data/projects.json';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import { getImagePath } from '../../../utils/imageUtils';
+import LoadingSpinner from '@/components/LoadingSpinner';
 
 interface Project {
   id: string;
@@ -15,6 +19,12 @@ interface Project {
 const DEFAULT_IMAGE = getImagePath('/projects/default.png');
 
 export default function ProjectsPage() {
+  const [loadingImages, setLoadingImages] = useState<{ [key: string]: boolean }>({});
+
+  const handleImageLoad = (projectId: string) => {
+    setLoadingImages(prev => ({ ...prev, [projectId]: false }));
+  };
+
   return (
     <div className="page-container">
       <div className="navbar">
@@ -38,7 +48,8 @@ export default function ProjectsPage() {
                 key={project.id} 
                 className="project-card"
               >
-                <div className="project-image-container">
+                <div className="project-image-container relative">
+                  {loadingImages[project.id] !== false && <LoadingSpinner />}
                   <Image
                     src={project.image ? getImagePath(project.image) : DEFAULT_IMAGE}
                     alt={project.title}
@@ -47,6 +58,7 @@ export default function ProjectsPage() {
                     className="project-image"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     priority
+                    onLoadingComplete={() => handleImageLoad(project.id)}
                   />
                   <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-overlay">
                     <svg className="project-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
