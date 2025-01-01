@@ -328,7 +328,7 @@
   }
 
   .profile-section {
-    @apply order-1 mb-12;
+    @apply order-1 mb-12 mt-16;
   }
 
   .description {
@@ -346,14 +346,22 @@
   .title {
     @apply text-2xl;
   }
+
+  .hero-section {
+    @apply min-h-screen h-auto py-8;
+  }
 }
 
 @media (max-width: 480px) {
   .cta-buttons {
-    @apply flex-col;
+    @apply flex-col gap-4;
   }
 
   .profile-image {
     @apply w-[220px] h-[220px];
+  }
+
+  .hero-section {
+    @apply pb-16;
   }
 }
