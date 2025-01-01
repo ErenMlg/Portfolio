@@ -1,6 +1,7 @@
 import projectsData from '@/data/projects.json';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '../../../utils/imageUtils';
 
 interface Project {
   id: string;
@@ -11,7 +12,7 @@ interface Project {
   tags: string[];
 }
 
-const DEFAULT_IMAGE = '/projects/default.png';
+const DEFAULT_IMAGE = getImagePath('/projects/default.png');
 
 export default function ProjectsPage() {
   return (
@@ -39,7 +40,7 @@ export default function ProjectsPage() {
               >
                 <div className="project-image-container">
                   <Image
-                    src={project.image || DEFAULT_IMAGE}
+                    src={project.image ? getImagePath(project.image) : DEFAULT_IMAGE}
                     alt={project.title}
                     width={400}
                     height={300}

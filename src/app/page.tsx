@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { getImagePath } from '../../utils/imageUtils';
 
 export default function Home() {
   return (
@@ -34,11 +35,12 @@ export default function Home() {
             <div className="profile-card">
               <div className="profile-image">
                 <Image
-                  src="/profile.jpg"
+                  src={getImagePath('/profile.jpg')}
                   alt="Eren Mollaoğlu"
                   fill
                   className="object-cover"
-                  sizes="280px"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="social-links">
