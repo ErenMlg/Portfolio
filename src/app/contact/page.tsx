@@ -11,6 +11,7 @@ export default function ContactPage() {
     <div className="contact-container">
       <LanguageSwitcher />
       <div className="contact-header">
+        <div className="navbar">
         <div className="container">
           <div className="navbar-content">
             <Link href="/" className="back-button">
@@ -20,7 +21,7 @@ export default function ContactPage() {
             </Link>
             <h1 className="page-title">{t.contact.title}</h1>
           </div>
-        </div>
+          </div></div>
       </div>
 
       <div className="contact-content">
@@ -29,11 +30,11 @@ export default function ContactPage() {
             <div className="contact-info">
               <h2 className="contact-info-title">{t.contact.info.title}</h2>
               <div className="contact-links">
-                <a href="mailto:mollaoglueren@gmail.com" className="contact-link">
+                <a href="mailto:eren.mollaoglu@outlook.com" className="contact-link">
                   <svg className="contact-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span>mollaoglueren@gmail.com</span>
+                  <span>eren.mollaoglu@outlook.com</span>
                 </a>
                 <div className="contact-link">
                   <svg className="contact-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">

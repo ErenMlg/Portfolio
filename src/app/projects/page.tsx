@@ -42,7 +42,6 @@ export default function ProjectsPage() {
 
   return (
     <div className="page-container">
-      <LanguageSwitcher />
       <div className="navbar">
         <div className="container">
           <div className="navbar-content">
@@ -54,6 +53,7 @@ export default function ProjectsPage() {
             <h1 className="page-title">{t.projects.title}</h1>
           </div>
         </div>
+        <LanguageSwitcher />
       </div>
 
       <div className="container mx-auto px-4 py-12 flex justify-center">
