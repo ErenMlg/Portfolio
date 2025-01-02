@@ -1,6 +1,6 @@
 'use client';
 
-import projectsData from '@/data/projects.json';
+import projectsData from '../../data/projects.json';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -18,6 +18,16 @@ interface Project {
   tags: string[];
 }
 
+interface ProjectsData {
+  tr: {
+    projects: Project[];
+  };
+  en: {
+    projects: Project[];
+  };
+}
+
+const typedProjectsData = projectsData as ProjectsData;
 const DEFAULT_IMAGE = getImagePath('/projects/default.png');
 
 export default function ProjectsPage() {
@@ -28,7 +38,7 @@ export default function ProjectsPage() {
     setLoadingImages(prev => ({ ...prev, [projectId]: false }));
   };
 
-  const localizedProjects = projectsData[language].projects;
+  const localizedProjects = typedProjectsData[language].projects;
 
   return (
     <div className="page-container">
