@@ -1,8 +1,6 @@
-'use client';
-
 import './globals.css';
 import { Poppins } from 'next/font/google';
-import { LanguageProvider } from '../context/LanguageContext';
+import ClientLayout from './client-layout';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -34,9 +32,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
-        <LanguageProvider>
+        <ClientLayout>
           {children}
-        </LanguageProvider>
+        </ClientLayout>
       </body>
     </html>
   );
