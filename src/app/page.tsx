@@ -5,26 +5,16 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { getImagePath } from '../../utils/imageUtils';
 import LoadingSpinner from '@/components/LoadingSpinner';
-import { Language, getTranslation } from '@/translations';
+import { useLanguage } from '@/context/LanguageContext';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Home() {
   const [imageLoading, setImageLoading] = useState(true);
-  const [language, setLanguage] = useState<Language>('tr');
-  const t = getTranslation(language);
-
-  const toggleLanguage = () => {
-    setLanguage(prev => prev === 'tr' ? 'en' : 'tr');
-  };
+  const { t } = useLanguage();
 
   return (
     <main className="min-h-screen">
-      {/* Language Switcher */}
-      <button 
-        onClick={toggleLanguage}
-        className="fixed top-4 right-4 z-50 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-white hover:bg-white/20 transition-all duration-300"
-      >
-        {language === 'tr' ? 'EN' : 'TR'}
-      </button>
+      <LanguageSwitcher />
 
       {/* Hero Section */}
       <section className="hero-section">

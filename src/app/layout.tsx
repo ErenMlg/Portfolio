@@ -1,5 +1,6 @@
 import './globals.css';
 import { Poppins } from 'next/font/google';
+import { LanguageProvider } from '@/context/LanguageContext';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -30,7 +31,11 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
       </head>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+      </body>
     </html>
   );
 }

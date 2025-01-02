@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { getImagePath } from '../../../utils/imageUtils';
 import LoadingSpinner from '@/components/LoadingSpinner';
+import { useLanguage } from '@/context/LanguageContext';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 interface Project {
   id: string;
@@ -20,6 +22,7 @@ const DEFAULT_IMAGE = getImagePath('/projects/default.png');
 
 export default function ProjectsPage() {
   const [loadingImages, setLoadingImages] = useState<{ [key: string]: boolean }>({});
+  const { t } = useLanguage();
 
   const handleImageLoad = (projectId: string) => {
     setLoadingImages(prev => ({ ...prev, [projectId]: false }));
@@ -27,6 +30,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="page-container">
+      <LanguageSwitcher />
       <div className="navbar">
         <div className="container">
           <div className="navbar-content">
