@@ -36,7 +36,7 @@
       {
         "id": "7",
         "title": "Bluetooth Smart Wristband",
-        "description": "Bluetooth özellikli akıllı bileklik ile veri alışverişi sağlayan Android uygulaması. Sağlık ve fitness verilerini takip eder.",
+        "description": "Bluetooth özellikli akıllı bileklik ile veri alışverişi sağlayan Android uygulaması. Görme engelli kişiler için geliştirildi.",
         "image": "",
         "githubLink": "https://github.com/ErenMlg/BluetoothSmartWristband",
         "tags": ["Android", "Kotlin", "Bluetooth", "Wearables"]
@@ -80,7 +80,7 @@
       {
         "id": "7",
         "title": "Bluetooth Smart Wristband",
-        "description": "Android application that enables data exchange with a Bluetooth-enabled smart wristband. Tracks health and fitness data.",
+        "description": "Android application that enables data exchange with a Bluetooth-enabled smart wristband. Developed for visually impaired people.",
         "image": "",
         "githubLink": "https://github.com/ErenMlg/BluetoothSmartWristband",
         "tags": ["Android", "Kotlin", "Bluetooth", "Wearables"]
