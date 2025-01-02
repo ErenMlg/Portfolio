@@ -51,9 +51,9 @@ export default function ProjectsPage() {
               </svg>
             </Link>
             <h1 className="page-title">{t.projects.title}</h1>
+            <LanguageSwitcher />
           </div>
         </div>
-        <LanguageSwitcher />
       </div>
 
       <div className="container mx-auto px-4 py-12 flex justify-center">

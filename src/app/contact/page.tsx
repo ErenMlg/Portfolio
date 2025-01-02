@@ -8,10 +8,8 @@ export default function ContactPage() {
   const { t } = useLanguage();
 
   return (
-    <div className="contact-container">
-      <LanguageSwitcher />
-      <div className="contact-header">
-        <div className="navbar">
+    <div className="page-container">
+      <div className="navbar">
         <div className="container">
           <div className="navbar-content">
             <Link href="/" className="back-button">
@@ -20,8 +18,9 @@ export default function ContactPage() {
               </svg>
             </Link>
             <h1 className="page-title">{t.contact.title}</h1>
+            <LanguageSwitcher />
           </div>
-          </div></div>
+        </div>
       </div>
 
       <div className="contact-content">
