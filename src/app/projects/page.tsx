@@ -39,7 +39,7 @@ export default function ProjectsPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </Link>
-            <h1 className="page-title">Projelerim</h1>
+            <h1 className="page-title">{t.projects.title}</h1>
           </div>
         </div>
       </div>

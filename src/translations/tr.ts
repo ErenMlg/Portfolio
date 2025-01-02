@@ -23,5 +23,26 @@ export const tr = {
         description: "TensorFlow, Keras, HuggingFace, Python"
       }
     }
+  },
+  projects: {
+    title: "Projelerim",
+    backToHome: "Ana Sayfaya Dön",
+    viewProject: "Projeyi Görüntüle"
+  },
+  contact: {
+    title: "İletişime Geç",
+    backToHome: "Ana Sayfaya Dön",
+    form: {
+      name: "Adınız",
+      email: "E-posta Adresiniz",
+      message: "Mesajınız",
+      send: "Gönder"
+    },
+    info: {
+      title: "İletişim Bilgileri",
+      email: "E-posta",
+      location: "Konum",
+      social: "Sosyal Medya"
+    }
   }
 }; 
