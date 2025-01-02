@@ -1,44 +1,90 @@
 {
-  "projects": [
-    {
-      "id": "1",
-      "title": "SoChic E Commerce XML & Compose Clone",
-      "description": "SoChic E-Commerce, modern ve kullanıcı dostu bir online alışveriş platformu oluşturmak için geliştirilmiş kapsamlı bir projedir.",
-      "image": "/projects/sochic.png",
-      "githubLink": "https://github.com/ErenMlg/SoChic-ECommerce",
-      "tags": ["Jetpack Compose", "XML", "Android", "MVVM", "Clean Architecture", "Kotlin", "GraphQL"]
-    },
-    {
-      "id": "4",
-      "title": "Insurance App",
-      "description": "Sigorta işlemlerini yönetmek için geliştirilmiş Android uygulaması. Kullanıcı dostu arayüz ve güvenli veri yönetimi sunar.",
-      "image": "/projects/insurance.png",
-      "githubLink": "https://github.com/ErenMlg/InsuranceApp",
-      "tags": ["Android", "Kotlin", "MVVM", "Clean Architecture", "Firebase"]
-    },
-    {
-      "id": "5",
-      "title": "Movie Detective",
-      "description": "Kullanıcıların film araması yapabileceği ve öneriler alabileceği modern bir Android uygulaması.",
-      "image": "/projects/moviedetective.png",
-      "githubLink": "https://github.com/ErenMlg/MovieDetective",
-      "tags": ["Android", "Kotlin", "MVVM", "API Integration", "Retrofit"]
-    },
-    {
-      "id": "6",
-      "title": "One Piece Android",
-      "description": "One Piece hayranları için karakter bilgileri, bölüm özetleri ve daha fazlasını sunan kapsamlı bir Android uygulaması.",
-      "image": "/projects/onepiece.png",
-      "githubLink": "https://github.com/ErenMlg/OnePieceAndroid",
-      "tags": ["Android", "Kotlin", "MVVM", "Anime", "API Integration"]
-    },
-    {
-      "id": "7",
-      "title": "Bluetooth Smart Wristband",
-      "description": "Bluetooth özellikli akıllı bileklik ile veri alışverişi sağlayan Android uygulaması. Görme engelli kişilerin ihtiyaçlarını karşılamak için geliştirilmiştir.",
-      "image": "",
-      "githubLink": "https://github.com/ErenMlg/BluetoothSmartWristband",
-      "tags": ["Android", "Kotlin", "Bluetooth", "Wearables"]
-    }
-  ]
+  "tr": {
+    "projects": [
+      {
+        "id": "1",
+        "title": "SoChic E Commerce XML & Compose Clone",
+        "description": "SoChic E-Commerce, modern ve kullanıcı dostu bir online alışveriş platformu oluşturmak için geliştirilmiş kapsamlı bir projedir.",
+        "image": "/projects/sochic.png",
+        "githubLink": "https://github.com/ErenMlg/SoChic-ECommerce",
+        "tags": ["Jetpack Compose", "XML", "Android", "MVVM", "Clean Architecture", "Kotlin", "GraphQL"]
+      },
+      {
+        "id": "4",
+        "title": "Insurance App",
+        "description": "Sigorta işlemlerini yönetmek için geliştirilmiş Android uygulaması. Kullanıcı dostu arayüz ve güvenli veri yönetimi sunar.",
+        "image": "/projects/insurance.png",
+        "githubLink": "https://github.com/ErenMlg/InsuranceApp",
+        "tags": ["Android", "Kotlin", "MVVM", "Clean Architecture", "Firebase"]
+      },
+      {
+        "id": "5",
+        "title": "Movie Detective",
+        "description": "Kullanıcıların film araması yapabileceği ve öneriler alabileceği modern bir Android uygulaması.",
+        "image": "/projects/moviedetective.png",
+        "githubLink": "https://github.com/ErenMlg/MovieDetective",
+        "tags": ["Android", "Kotlin", "MVVM", "API Integration", "Retrofit"]
+      },
+      {
+        "id": "6",
+        "title": "One Piece Android",
+        "description": "One Piece hayranları için karakter bilgileri, bölüm özetleri ve daha fazlasını sunan kapsamlı bir Android uygulaması.",
+        "image": "/projects/onepiece.png",
+        "githubLink": "https://github.com/ErenMlg/OnePieceAndroid",
+        "tags": ["Android", "Kotlin", "MVVM", "Anime", "API Integration"]
+      },
+      {
+        "id": "7",
+        "title": "Bluetooth Smart Wristband",
+        "description": "Bluetooth özellikli akıllı bileklik ile veri alışverişi sağlayan Android uygulaması. Sağlık ve fitness verilerini takip eder.",
+        "image": "",
+        "githubLink": "https://github.com/ErenMlg/BluetoothSmartWristband",
+        "tags": ["Android", "Kotlin", "Bluetooth", "Wearables"]
+      }
+    ]
+  },
+  "en": {
+    "projects": [
+      {
+        "id": "1",
+        "title": "SoChic E Commerce XML & Compose Clone",
+        "description": "SoChic E-Commerce is a comprehensive project developed to create a modern and user-friendly online shopping platform.",
+        "image": "/projects/sochic.png",
+        "githubLink": "https://github.com/ErenMlg/SoChic-ECommerce",
+        "tags": ["Jetpack Compose", "XML", "Android", "MVVM", "Clean Architecture", "Kotlin", "GraphQL"]
+      },
+      {
+        "id": "4",
+        "title": "Insurance App",
+        "description": "An Android application developed to manage insurance operations. Provides user-friendly interface and secure data management.",
+        "image": "/projects/insurance.png",
+        "githubLink": "https://github.com/ErenMlg/InsuranceApp",
+        "tags": ["Android", "Kotlin", "MVVM", "Clean Architecture", "Firebase"]
+      },
+      {
+        "id": "5",
+        "title": "Movie Detective",
+        "description": "A modern Android application where users can search for movies and receive recommendations.",
+        "image": "/projects/moviedetective.png",
+        "githubLink": "https://github.com/ErenMlg/MovieDetective",
+        "tags": ["Android", "Kotlin", "MVVM", "API Integration", "Retrofit"]
+      },
+      {
+        "id": "6",
+        "title": "One Piece Android",
+        "description": "A comprehensive Android application for One Piece fans offering character information, episode summaries, and more.",
+        "image": "/projects/onepiece.png",
+        "githubLink": "https://github.com/ErenMlg/OnePieceAndroid",
+        "tags": ["Android", "Kotlin", "MVVM", "Anime", "API Integration"]
+      },
+      {
+        "id": "7",
+        "title": "Bluetooth Smart Wristband",
+        "description": "Android application that enables data exchange with a Bluetooth-enabled smart wristband. Tracks health and fitness data.",
+        "image": "",
+        "githubLink": "https://github.com/ErenMlg/BluetoothSmartWristband",
+        "tags": ["Android", "Kotlin", "Bluetooth", "Wearables"]
+      }
+    ]
+  }
 }

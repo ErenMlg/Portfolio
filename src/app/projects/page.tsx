@@ -22,11 +22,13 @@ const DEFAULT_IMAGE = getImagePath('/projects/default.png');
 
 export default function ProjectsPage() {
   const [loadingImages, setLoadingImages] = useState<{ [key: string]: boolean }>({});
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const handleImageLoad = (projectId: string) => {
     setLoadingImages(prev => ({ ...prev, [projectId]: false }));
   };
+
+  const localizedProjects = projectsData[language].projects;
 
   return (
     <div className="page-container">
@@ -47,7 +49,7 @@ export default function ProjectsPage() {
       <div className="container mx-auto px-4 py-12 flex justify-center">
         <div className="max-w-6xl w-full">
           <div className="projects-grid">
-            {projectsData.projects.map((project: Project) => (
+            {localizedProjects.map((project: Project) => (
               <div 
                 key={project.id} 
                 className="project-card"
