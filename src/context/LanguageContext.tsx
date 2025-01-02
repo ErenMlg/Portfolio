@@ -9,21 +9,30 @@ interface LanguageContextType {
   t: ReturnType<typeof getTranslation>;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const defaultLanguage: Language = 'tr';
+const defaultTranslation = getTranslation(defaultLanguage);
+
+const LanguageContext = createContext<LanguageContextType>({
+  language: defaultLanguage,
+  setLanguage: () => {},
+  t: defaultTranslation,
+});
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>('tr');
-  const t = getTranslation(language);
+  const [language, setLanguage] = useState<Language>(defaultLanguage);
+  const [t, setT] = useState(defaultTranslation);
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem('language') as Language;
     if (savedLanguage) {
       setLanguage(savedLanguage);
+      setT(getTranslation(savedLanguage));
     }
   }, []);
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
+    setT(getTranslation(lang));
     localStorage.setItem('language', lang);
   };
 
@@ -36,7 +45,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
 export function useLanguage() {
   const context = useContext(LanguageContext);
-  if (context === undefined) {
+  if (!context) {
     throw new Error('useLanguage must be used within a LanguageProvider');
   }
   return context;

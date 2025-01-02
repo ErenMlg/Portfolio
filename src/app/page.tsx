@@ -5,12 +5,16 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { getImagePath } from '../../utils/imageUtils';
 import LoadingSpinner from '@/components/LoadingSpinner';
+import { useLanguage } from '@/context/LanguageContext';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Home() {
   const [imageLoading, setImageLoading] = useState(true);
+  const { t } = useLanguage();
 
   return (
     <main className="min-h-screen">
+      <LanguageSwitcher />
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container">
