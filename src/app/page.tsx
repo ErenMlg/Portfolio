@@ -5,32 +5,47 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { getImagePath } from '../../utils/imageUtils';
 import LoadingSpinner from '@/components/LoadingSpinner';
+import { Language, getTranslation } from '@/translations';
 
 export default function Home() {
   const [imageLoading, setImageLoading] = useState(true);
+  const [language, setLanguage] = useState<Language>('tr');
+  const t = getTranslation(language);
+
+  const toggleLanguage = () => {
+    setLanguage(prev => prev === 'tr' ? 'en' : 'tr');
+  };
 
   return (
     <main className="min-h-screen">
+      {/* Language Switcher */}
+      <button 
+        onClick={toggleLanguage}
+        className="fixed top-4 right-4 z-50 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-white hover:bg-white/20 transition-all duration-300"
+      >
+        {language === 'tr' ? 'EN' : 'TR'}
+      </button>
+
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container">
           <div className="intro-text">
-            <h2 className="greeting">Merhaba, Ben</h2>
+            <h2 className="greeting">{t.greeting}</h2>
             <h1 className="name">
-              Eren Mollaoğlu
+              {t.name}
             </h1>
             <h3 className="title">
-              Jr. Android Developer
+              {t.title}
             </h3>
             <p className="description">
-              Mobil uygulama geliştirme konusunda tutkulu, yenilikçi çözümler üreten ve sürekli öğrenmeye odaklı bir yazılım mühendisi.
+              {t.description}
             </p>
             <div className="cta-buttons">
               <Link href="/projects" className="cta-button primary">
-                Projelerimi Gör
+                {t.buttons.projects}
               </Link>
               <Link href="/contact" className="cta-button secondary">
-                İletişime Geç
+                {t.buttons.contact}
               </Link>
             </div>
           </div>
@@ -41,7 +56,7 @@ export default function Home() {
                 {imageLoading && <LoadingSpinner />}
                 <Image
                   src={getImagePath('/profile.jpg')}
-                  alt="Eren Mollaoğlu"
+                  alt={t.name}
                   fill
                   className="object-cover object-center"
                   onLoadingComplete={() => setImageLoading(false)}
@@ -69,29 +84,29 @@ export default function Home() {
       <section className="skills-section">
         <div className="container">
           <h2 className="section-title">
-            Uzmanlık Alanlarım
+            {t.sections.skills.title}
           </h2>
           <div className="skills-grid">
             <div className="skill-card">
               <div className="skill-icon">
                 <i className="fab fa-android"></i>
               </div>
-              <h3>Android Geliştirme</h3>
-              <p>Kotlin, Jetpack Compose, XML, Multiplatform</p>
+              <h3>{t.sections.skills.android.title}</h3>
+              <p>{t.sections.skills.android.description}</p>
             </div>
             <div className="skill-card">
               <div className="skill-icon">
                 <i className="fas fa-mobile-alt"></i>
               </div>
-              <h3>Cross Platform</h3>
-              <p>Flutter, Dart</p>
+              <h3>{t.sections.skills.crossPlatform.title}</h3>
+              <p>{t.sections.skills.crossPlatform.description}</p>
             </div>
             <div className="skill-card">
               <div className="skill-icon">
                 <i className="fas fa-brain"></i>
               </div>
-              <h3>Yapay Zeka</h3>
-              <p>TensorFlow, Keras, HuggingFace, Python</p>
+              <h3>{t.sections.skills.ai.title}</h3>
+              <p>{t.sections.skills.ai.description}</p>
             </div>
           </div>
         </div>

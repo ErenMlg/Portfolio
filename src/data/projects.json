@@ -35,7 +35,7 @@
     {
       "id": "7",
       "title": "Bluetooth Smart Wristband",
-      "description": "Bluetooth özellikli akıllı bileklik ile veri alışverişi sağlayan Android uygulaması. Sağlık ve fitness verilerini takip eder.",
+      "description": "Bluetooth özellikli akıllı bileklik ile veri alışverişi sağlayan Android uygulaması. Görme engelli kişilerin ihtiyaçlarını karşılamak için geliştirilmiştir.",
       "image": "",
       "githubLink": "https://github.com/ErenMlg/BluetoothSmartWristband",
       "tags": ["Android", "Kotlin", "Bluetooth", "Wearables"]
