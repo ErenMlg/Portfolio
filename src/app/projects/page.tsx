@@ -3,7 +3,7 @@
 import projectsData from '../../data/projects.json';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { getImagePath } from '../../../utils/imageUtils';
 import LoadingSpinner from '../../components/LoadingSpinner';
 import { useLanguage } from '../../context/LanguageContext';
@@ -32,13 +32,24 @@ const DEFAULT_IMAGE = getImagePath('/projects/default.png');
 
 export default function ProjectsPage() {
   const [loadingImages, setLoadingImages] = useState<{ [key: string]: boolean }>({});
+  const [isLanguageReady, setIsLanguageReady] = useState(false);
   const { t, language } = useLanguage();
+
+  useEffect(() => {
+    if (language && t) {
+      setIsLanguageReady(true);
+    }
+  }, [language, t]);
 
   const handleImageLoad = (projectId: string) => {
     setLoadingImages(prev => ({ ...prev, [projectId]: false }));
   };
 
   const localizedProjects = typedProjectsData[language].projects;
+
+  if (!isLanguageReady) {
+    return <div className="page-container"><LoadingSpinner /></div>;
+  }
 
   return (
     <div className="page-container">

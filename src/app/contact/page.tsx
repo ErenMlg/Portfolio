@@ -1,11 +1,24 @@
 'use client';
 
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import LanguageSwitcher from '../../components/LanguageSwitcher';
+import LoadingSpinner from '../../components/LoadingSpinner';
 
 export default function ContactPage() {
+  const [isLanguageReady, setIsLanguageReady] = useState(false);
   const { t } = useLanguage();
+
+  useEffect(() => {
+    if (t) {
+      setIsLanguageReady(true);
+    }
+  }, [t]);
+
+  if (!isLanguageReady) {
+    return <div className="page-container"><LoadingSpinner /></div>;
+  }
 
   return (
     <div className="page-container">
