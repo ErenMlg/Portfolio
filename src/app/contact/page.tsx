@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { useLanguage } from '@/context/LanguageContext';
-import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { useLanguage } from '../../context/LanguageContext';
+import LanguageSwitcher from '../../components/LanguageSwitcher';
 
 export default function ContactPage() {
   const { t } = useLanguage();

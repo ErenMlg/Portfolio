@@ -5,9 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { getImagePath } from '../../../utils/imageUtils';
-import LoadingSpinner from '@/components/LoadingSpinner';
-import { useLanguage } from '@/context/LanguageContext';
-import LanguageSwitcher from '@/components/LanguageSwitcher';
+import LoadingSpinner from '../../components/LoadingSpinner';
+import { useLanguage } from '../../context/LanguageContext';
+import LanguageSwitcher from '../../components/LanguageSwitcher';
 
 interface Project {
   id: string;
