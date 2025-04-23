@@ -1,7 +1,7 @@
 export const en = {
   greeting: "Hello, I'm",
   name: "Eren Mollaoğlu",
-  title: "Jr. Android Developer",
+  title: "Jr. Software Developer",
   description: "A passionate software developer focused on creating innovative solutions in mobile app development and continuously learning.",
   buttons: {
     projects: "View Projects",
@@ -15,8 +15,8 @@ export const en = {
         description: "Kotlin, Jetpack Compose, XML, Multiplatform"
       },
       crossPlatform: {
-        title: "Cross Platform",
-        description: "Flutter, Dart"
+        title: "Devops Engineer",
+        description: "Kubernetes, Gitlab, CI/CD, Docker, Prometheus, Grafana, New Relic"
       },
       ai: {
         title: "Artificial Intelligence",
