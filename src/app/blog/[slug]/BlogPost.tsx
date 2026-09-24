@@ -1,6 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
+import { getImagePath } from '../../../../utils/imageUtils';
 import LanguageSwitcher from '../../../components/LanguageSwitcher';
 import { useLanguage } from '../../../context/LanguageContext';
 import { Post, formatPostDate } from '../../../data/blog';
@@ -36,6 +38,19 @@ export default function BlogPost({ post }: { post: Post }) {
               <span key={tag} className="project-tag">{tag}</span>
             ))}
           </div>
+
+          {post.image && (
+            <div className="article-cover">
+              <Image
+                src={getImagePath(post.image)}
+                alt={content.title}
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 680px"
+                priority
+              />
+            </div>
+          )}
 
           {content.body.map((paragraph) => (
             <p key={paragraph} className="article-paragraph">{paragraph}</p>

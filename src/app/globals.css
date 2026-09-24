@@ -151,10 +151,6 @@
   }
 
   /* Blog */
-  .post-card {
-    @apply flex flex-col gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-hover)];
-  }
-
   .post-date {
     @apply text-xs text-[var(--text-muted)] tabular-nums;
   }
@@ -163,16 +159,16 @@
     @apply text-lg font-medium leading-snug;
   }
 
-  .post-excerpt {
-    @apply text-sm text-[var(--text-muted)] flex-grow;
-  }
-
   .article {
     @apply max-w-[680px] mx-auto;
   }
 
   .article-title {
     @apply text-3xl md:text-4xl font-semibold tracking-tight mt-3 mb-5;
+  }
+
+  .article-cover {
+    @apply relative aspect-video mb-10 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)];
   }
 
   .article-paragraph {

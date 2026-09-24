@@ -10,6 +10,7 @@ export interface PostContent {
 export interface Post {
   slug: string;
   date: string;
+  image: string;
   linkedin: string;
   tags: string[];
   links: { label: string; url: string }[];

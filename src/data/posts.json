@@ -3,9 +3,19 @@
     {
       "slug": "building-my-website-with-cursor",
       "date": "2025-01-02",
+      "image": "/blog/building-my-website-with-cursor.jpg",
       "linkedin": "https://www.linkedin.com/feed/update/urn:li:share:7280582589407465472",
-      "tags": ["AI", "Cursor", "Next.js"],
-      "links": [{ "label": "Portfolio", "url": "https://erenmlg.github.io/Portfolio/" }],
+      "tags": [
+        "AI",
+        "Cursor",
+        "Next.js"
+      ],
+      "links": [
+        {
+          "label": "Portfolio",
+          "url": "https://erenmlg.github.io/Portfolio/"
+        }
+      ],
       "tr": {
         "title": "Tek satır kod yazmadan Cursor ile web sitemi yaptım",
         "excerpt": "Next.js ve Node.js'e hakim olmadan, yapay zeka destekli editör Cursor ile kendi web sitemi oluşturdum.",
@@ -30,8 +40,13 @@
     {
       "slug": "btk-hackathon-2024-motikoc",
       "date": "2024-12-25",
+      "image": "/blog/btk-hackathon-2024-motikoc.jpg",
       "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7277646799157231616",
-      "tags": ["Hackathon", "AI", "BTK Akademi"],
+      "tags": [
+        "Hackathon",
+        "AI",
+        "BTK Akademi"
+      ],
       "links": [],
       "tr": {
         "title": "BTK Akademi Hackathon 2024: Motikoç ile derece",
@@ -55,9 +70,19 @@
     {
       "slug": "multiple-input-collector-compose",
       "date": "2024-11-21",
+      "image": "/blog/multiple-input-collector-compose.jpg",
       "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7265292222814638080",
-      "tags": ["Jetpack Compose", "Kotlin", "Material 3"],
-      "links": [{ "label": "GitHub", "url": "https://github.com/ErenMlg/MultipleInputCollector" }],
+      "tags": [
+        "Jetpack Compose",
+        "Kotlin",
+        "Material 3"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ErenMlg/MultipleInputCollector"
+        }
+      ],
       "tr": {
         "title": "Jetpack Compose ile dinamik ilgi alanı seçici",
         "excerpt": "BTK Hackathon'da 4.'lük alan Motikoç projesi için geliştirdiğim, dinamik önerili ilgi alanı seçme bileşeni.",
@@ -80,9 +105,19 @@
     {
       "slug": "eatzy-jetpack-compose-bootcamp",
       "date": "2024-09-24",
+      "image": "/blog/eatzy-jetpack-compose-bootcamp.jpg",
       "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7244331642469634048",
-      "tags": ["Jetpack Compose", "MVI", "Firebase"],
-      "links": [{ "label": "GitHub", "url": "https://github.com/ErenMlg/Eatzy" }],
+      "tags": [
+        "Jetpack Compose",
+        "MVI",
+        "Firebase"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ErenMlg/Eatzy"
+        }
+      ],
       "tr": {
         "title": "Eatzy: Jetpack Compose Bootcamp bitirme projesi",
         "excerpt": "Techcareer.net ve Turkcell Global Bilgi iş birliğindeki Jetpack Compose Bootcamp için geliştirdiğim yemek siparişi uygulaması.",
@@ -90,7 +125,21 @@
           "Kasım Adalan'ın Techcareer.net ve Turkcell Global Bilgi iş birliğiyle düzenlediği Jetpack Compose Bootcamp programına katıldım. Programda her öğrenciden bir yemek siparişi uygulaması geliştirmesi bekleniyordu.",
           "Proje ağırlıklı olarak Coroutines, Flow, MVVM ile birleştirilmiş MVI, Firebase ve ilgili teknolojilerin kullanımını gösteriyor."
         ],
-        "highlights": ["Jetpack Compose", "Clean Architecture", "MVVM + MVI", "Coroutines", "Navigation Components", "Dependency Injection", "Retrofit ve OkHttp", "KSP", "Firebase Auth ve Firestore", "Material 3", "Room", "Coil", "Figma"]
+        "highlights": [
+          "Jetpack Compose",
+          "Clean Architecture",
+          "MVVM + MVI",
+          "Coroutines",
+          "Navigation Components",
+          "Dependency Injection",
+          "Retrofit ve OkHttp",
+          "KSP",
+          "Firebase Auth ve Firestore",
+          "Material 3",
+          "Room",
+          "Coil",
+          "Figma"
+        ]
       },
       "en": {
         "title": "Eatzy: my Jetpack Compose Bootcamp final project",
@@ -99,15 +148,39 @@
           "I took part in the Jetpack Compose Bootcamp organized by Kasım Adalan together with Techcareer.net and Turkcell Global Bilgi. Every student was tasked with building a food delivery application.",
           "The project mainly shows the use of Coroutines, Flow, MVI combined with MVVM, Firebase and related technologies."
         ],
-        "highlights": ["Jetpack Compose", "Clean Architecture", "MVVM + MVI", "Coroutines", "Navigation Components", "Dependency Injection", "Retrofit and OkHttp", "KSP", "Firebase Auth and Firestore", "Material 3", "Room", "Coil", "Figma"]
+        "highlights": [
+          "Jetpack Compose",
+          "Clean Architecture",
+          "MVVM + MVI",
+          "Coroutines",
+          "Navigation Components",
+          "Dependency Injection",
+          "Retrofit and OkHttp",
+          "KSP",
+          "Firebase Auth and Firestore",
+          "Material 3",
+          "Room",
+          "Coil",
+          "Figma"
+        ]
       }
     },
     {
       "slug": "vertical-scrollable-popup-compose-multiplatform",
       "date": "2024-08-21",
+      "image": "/blog/vertical-scrollable-popup-compose-multiplatform.jpg",
       "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7231980511768805376",
-      "tags": ["Compose Multiplatform", "Kotlin", "UI"],
-      "links": [{ "label": "GitHub", "url": "https://github.com/ErenMlg/UniqueVerticalSelectionPopUp" }],
+      "tags": [
+        "Compose Multiplatform",
+        "Kotlin",
+        "UI"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ErenMlg/UniqueVerticalSelectionPopUp"
+        }
+      ],
       "tr": {
         "title": "Compose Multiplatform için dikey kaydırmalı pop-up",
         "excerpt": "Compose Multiplatform projelerinde kullanılabilen, dikey kaydırmalı özel bir seçim dialog'u.",
@@ -128,9 +201,19 @@
     {
       "slug": "navigation-helper-popup",
       "date": "2024-08-20",
+      "image": "/blog/navigation-helper-popup.jpg",
       "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7231570001722265601",
-      "tags": ["Android", "Kotlin", "Navigation"],
-      "links": [{ "label": "GitHub", "url": "https://github.com/ErenMlg/NavigationHelperPopUp" }],
+      "tags": [
+        "Android",
+        "Kotlin",
+        "Navigation"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ErenMlg/NavigationHelperPopUp"
+        }
+      ],
       "tr": {
         "title": "Çok ekranlı uygulamalar için harita gibi navigasyon dialog'u",
         "excerpt": "Kullanıcının hangi sayfada olduğunu ve oraya hangi yoldan geldiğini gösteren, tıklanabilir bir navigasyon pop-up'ı.",
@@ -151,9 +234,19 @@
     {
       "slug": "proguard-vs-r8",
       "date": "2024-08-14",
+      "image": "",
       "linkedin": "https://www.linkedin.com/feed/update/urn:li:share:7229407667742457856",
-      "tags": ["Android", "ProGuard", "R8"],
-      "links": [{ "label": "Medium", "url": "https://medium.com/@eren.mollaoglu/what-is-proguard-r8-differences-c229fbe307c9" }],
+      "tags": [
+        "Android",
+        "ProGuard",
+        "R8"
+      ],
+      "links": [
+        {
+          "label": "Medium",
+          "url": "https://medium.com/@eren.mollaoglu/what-is-proguard-r8-differences-c229fbe307c9"
+        }
+      ],
       "tr": {
         "title": "ProGuard ve R8 arasındaki farklar",
         "excerpt": "ProGuard ile R8'in farklarını ve kullanımlarını kod örnekleriyle anlattığım Medium yazısı.",
@@ -172,11 +265,22 @@
     {
       "slug": "one-piece-android-and-api",
       "date": "2024-04-19",
+      "image": "/blog/one-piece-android-and-api.jpg",
       "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7187009687207165952",
-      "tags": ["Android", "MVVM", "REST API"],
+      "tags": [
+        "Android",
+        "MVVM",
+        "REST API"
+      ],
       "links": [
-        { "label": "Android (GitHub)", "url": "https://github.com/ErenMlg/OnePieceAndroid" },
-        { "label": "API (GitHub)", "url": "https://github.com/ErenMlg/OnePieceAPI" }
+        {
+          "label": "Android (GitHub)",
+          "url": "https://github.com/ErenMlg/OnePieceAndroid"
+        },
+        {
+          "label": "API (GitHub)",
+          "url": "https://github.com/ErenMlg/OnePieceAPI"
+        }
       ],
       "tr": {
         "title": "One Piece: Android uygulaması ve kendi API'si",
@@ -185,7 +289,19 @@
           "One Piece'e dayanan bir anime uygulamasının reposunu yayınladım. Bu reponun temel amacı MVVM, Coroutines, Flow ve ilgili teknolojileri daha iyi kavramaktı.",
           "Uygulamanın veri kaynağı, kendim yazdığım yerel bir API."
         ],
-        "highlights": ["MVVM ve Clean Architecture", "Coroutines", "Navigation Components", "Hilt ile Dependency Injection", "Retrofit ve OkHttp", "Picasso", "Room", "Lottie", "Media3 ExoPlayer", "KSP", "Custom View'lar"]
+        "highlights": [
+          "MVVM ve Clean Architecture",
+          "Coroutines",
+          "Navigation Components",
+          "Hilt ile Dependency Injection",
+          "Retrofit ve OkHttp",
+          "Picasso",
+          "Room",
+          "Lottie",
+          "Media3 ExoPlayer",
+          "KSP",
+          "Custom View'lar"
+        ]
       },
       "en": {
         "title": "One Piece: an Android app with its own API",
@@ -194,7 +310,19 @@
           "I released the repository for an anime app based on One Piece. The main goal was to deepen my understanding of MVVM, Coroutines, Flow and related technologies.",
           "The app's data comes from a custom local API that I wrote myself."
         ],
-        "highlights": ["MVVM with Clean Architecture", "Coroutines", "Navigation Components", "Hilt for Dependency Injection", "Retrofit and OkHttp", "Picasso", "Room", "Lottie", "Media3 ExoPlayer", "KSP", "Custom Views"]
+        "highlights": [
+          "MVVM with Clean Architecture",
+          "Coroutines",
+          "Navigation Components",
+          "Hilt for Dependency Injection",
+          "Retrofit and OkHttp",
+          "Picasso",
+          "Room",
+          "Lottie",
+          "Media3 ExoPlayer",
+          "KSP",
+          "Custom Views"
+        ]
       }
     }
   ]
