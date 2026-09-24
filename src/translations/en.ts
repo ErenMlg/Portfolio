@@ -1,5 +1,4 @@
 export const en = {
-  greeting: "Hello, I'm",
   name: "Eren Mollaoğlu",
   title: "Software Developer",
   description: "I build backend services for a crypto platform and ship end-to-end products on mobile and web.",
@@ -8,6 +7,10 @@ export const en = {
     contact: "Contact Me"
   },
   sections: {
+    featured: {
+      title: "Selected Work",
+      viewAll: "All projects"
+    },
     experience: {
       title: "Experience",
       items: [

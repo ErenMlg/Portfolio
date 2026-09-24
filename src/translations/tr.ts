@@ -1,5 +1,4 @@
 export const tr = {
-  greeting: "Merhaba, Ben",
   name: "Eren Mollaoğlu",
   title: "Software Developer",
   description: "Kripto platformunda backend geliştiriyorum; mobil ve web tarafında da uçtan uca ürün çıkarıyorum.",
@@ -8,6 +7,10 @@ export const tr = {
     contact: "İletişime Geç"
   },
   sections: {
+    featured: {
+      title: "Öne Çıkan İşler",
+      viewAll: "Tüm projeler"
+    },
     experience: {
       title: "Deneyim",
       items: [

@@ -1,11 +1,10 @@
 import './globals.css';
-import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import ClientLayout from './client-layout';
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
+const inter = Inter({
+  subsets: ['latin', 'latin-ext'],
+  variable: '--font-inter',
   display: 'swap',
 });
 
@@ -20,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="tr" className={`${poppins.variable}`}>
+    <html lang="tr" className={`${inter.variable}`}>
       <head>
         <link rel="icon" type="image/svg+xml" href="/Portfolio/code-icon.svg" />
         <link rel="alternate icon" href="/Portfolio/favicon.ico" />

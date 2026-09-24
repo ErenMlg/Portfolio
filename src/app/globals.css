@@ -4,297 +4,280 @@
 
 @layer base {
   :root {
-    --android-green: #3DDC84;
-    --android-dark: #073042;
-    --surface-light: #FFFFFF;
-    --surface-dark: #1F1F1F;
-    --text-primary: #073042;
-    --text-secondary: #666666;
-  }
-
-  * {
-    @apply m-0 p-0 box-border;
-    font-family: 'Poppins', sans-serif;
+    --bg: #0b0c0e;
+    --surface: #131417;
+    --surface-hover: #1a1c20;
+    --border: #24262b;
+    --border-strong: #34373e;
+    --text: #ededef;
+    --text-muted: #8b8f98;
+    --accent: #7c83f5;
   }
 
   body {
-    @apply bg-[var(--surface-light)] text-[var(--text-primary)] leading-relaxed;
+    @apply bg-[var(--bg)] text-[var(--text)] leading-relaxed antialiased;
+  }
+
+  ::selection {
+    @apply bg-[var(--accent)] text-white;
   }
 }
 
 @layer components {
   .container {
-    @apply max-w-[1200px] mx-auto px-4 lg:px-8;
+    @apply max-w-[1100px] mx-auto px-4 lg:px-8;
   }
 
   /* Hero Section */
   .hero-section {
-    @apply h-screen flex items-center bg-gradient-to-r from-[var(--android-dark)] to-[#0D1117] overflow-hidden;
+    @apply relative min-h-screen flex items-center overflow-hidden py-24;
+    background:
+      radial-gradient(ellipse 60% 50% at 70% 0%, rgba(124, 131, 245, 0.14), transparent 70%),
+      var(--bg);
+  }
+
+  .hero-section::before {
+    @apply content-[''] absolute inset-0 pointer-events-none;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent 75%);
+    opacity: 0.35;
   }
 
   .hero-section .container {
-    @apply h-full grid grid-cols-1 lg:grid-cols-[1.2fr,0.8fr] gap-8 lg:gap-16 items-center;
+    @apply relative w-full grid grid-cols-1 lg:grid-cols-[1.4fr,0.6fr] gap-12 lg:gap-16 items-center;
   }
 
   .intro-text {
-    @apply text-white animate-fade-up h-full flex flex-col justify-center;
+    @apply animate-fade-up flex flex-col;
   }
 
   .greeting {
-    @apply text-lg text-[var(--android-green)] mb-4 animate-slide-left;
+    @apply inline-flex w-fit items-center gap-2 text-sm text-[var(--text-muted)] border border-[var(--border)] bg-[var(--surface)] rounded-full px-3 py-1 mb-6;
+  }
+
+  .greeting::before {
+    @apply content-[''] w-2 h-2 rounded-full bg-emerald-400;
   }
 
   .name {
-    @apply text-[3.5rem] font-bold mb-2;
+    @apply text-5xl md:text-6xl font-semibold tracking-tight mb-3;
   }
 
   .title {
-    @apply text-3xl text-[var(--android-green)] mb-6;
+    @apply text-2xl md:text-3xl font-medium tracking-tight text-[var(--accent)] mb-6;
   }
 
   .description {
-    @apply text-lg opacity-90 mb-8 max-w-[600px];
+    @apply text-lg text-[var(--text-muted)] max-w-[560px];
   }
 
   /* Profile Card */
   .profile-section {
-    @apply h-full flex items-center justify-center relative;
+    @apply flex items-center justify-center;
   }
 
   .profile-card {
-    @apply bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/10 w-full max-w-md relative z-10;
-  }
-
-  .profile-background {
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-white/5 rounded-3xl -rotate-12 backdrop-blur-sm;
+    @apply w-full max-w-[300px] rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-3;
   }
 
   .profile-image {
-    @apply relative w-full aspect-square max-w-[320px] mx-auto mb-8;
-  }
-
-  .profile-image img {
-    @apply w-full h-full rounded-2xl object-cover border-[3px] border-[var(--android-green)];
+    @apply relative overflow-hidden rounded-xl mb-3;
   }
 
   .social-links {
-    @apply flex justify-center gap-6;
+    @apply flex justify-center gap-2;
   }
 
   .social-link {
-    @apply text-white text-2xl transition-all duration-300 hover:text-[var(--android-green)] hover:-translate-y-1;
+    @apply w-10 h-10 flex items-center justify-center rounded-lg text-[var(--text-muted)] transition-colors hover:text-[var(--text)] hover:bg-[var(--surface-hover)];
   }
 
   /* CTA Buttons */
   .cta-buttons {
-    @apply flex gap-6 mt-10 flex-col sm:flex-row;
+    @apply flex gap-3 mt-10 flex-col sm:flex-row;
   }
 
   .cta-button {
-    @apply px-8 py-3 rounded-xl font-medium transition-all duration-300 hover:-translate-y-1 no-underline;
+    @apply inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-medium transition-colors no-underline;
   }
 
   .cta-button.primary {
-    @apply bg-[var(--android-green)] text-[var(--android-dark)] hover:shadow-[0_8px_30px_rgb(61,220,132,0.3)];
+    @apply bg-[var(--text)] text-[var(--bg)] hover:bg-white;
   }
 
   .cta-button.secondary {
-    @apply bg-transparent text-white border-2 border-[var(--android-green)] hover:bg-[var(--android-green)] hover:text-[var(--android-dark)] hover:shadow-[0_8px_30px_rgb(61,220,132,0.3)];
+    @apply border border-[var(--border-strong)] text-[var(--text)] hover:bg-[var(--surface-hover)];
   }
 
-  /* Experience Section */
-  .experience-section {
-    @apply py-24 bg-[var(--surface-light)];
+  /* Home sections */
+  .home-section {
+    @apply py-24 border-t border-[var(--border)];
+  }
+
+  .section-header {
+    @apply flex items-end justify-between gap-4 mb-10;
   }
 
   .section-title {
-    @apply text-4xl font-bold text-center text-[var(--android-dark)] mb-16;
+    @apply text-3xl font-semibold tracking-tight;
   }
 
+  .section-link {
+    @apply text-sm text-[var(--text-muted)] hover:text-[var(--text)] transition-colors whitespace-nowrap;
+  }
+
+  /* Experience */
   .experience-list {
-    @apply max-w-3xl mx-auto border-l-2 border-[var(--android-green)] space-y-10;
+    @apply divide-y divide-[var(--border)] border-y border-[var(--border)];
   }
 
   .experience-item {
-    @apply relative pl-8;
-  }
-
-  .experience-item::before {
-    @apply content-[''] absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-[var(--android-green)];
+    @apply grid grid-cols-1 md:grid-cols-[220px,1fr] gap-1 md:gap-8 py-6;
   }
 
   .experience-period {
-    @apply text-sm font-medium text-[var(--text-secondary)];
+    @apply text-sm text-[var(--text-muted)] tabular-nums;
   }
 
   .experience-item h3 {
-    @apply text-xl font-bold text-[var(--android-dark)] mt-1 mb-2;
+    @apply text-lg font-medium mb-1;
   }
 
   .experience-item p {
-    @apply text-[var(--text-secondary)];
+    @apply text-[var(--text-muted)];
   }
 
-  /* Projects Page */
+  /* Page chrome (projects, contact) */
   .page-container {
-    @apply min-h-screen bg-[var(--surface-light)];
+    @apply min-h-screen bg-[var(--bg)];
   }
 
   .navbar {
-    @apply bg-gradient-to-r from-[var(--android-dark)] to-[#0D1117] py-6 sticky top-0 z-50;
+    @apply sticky top-0 z-40 py-4 border-b border-[var(--border)] bg-[#0b0c0e]/80 backdrop-blur-md;
   }
 
   .navbar-content {
-    @apply flex items-center max-w-6xl mx-auto;
+    @apply flex items-center gap-3;
   }
 
   .back-button {
-    @apply w-8 h-8 flex items-center justify-center bg-white/10 rounded-full text-[var(--android-green)] transition-all duration-300 hover:-translate-x-1;
-  }
-
-  .back-button svg {
-    @apply w-5 h-5;
+    @apply w-9 h-9 flex items-center justify-center rounded-lg border border-[var(--border)] text-[var(--text-muted)] transition-colors hover:text-[var(--text)] hover:bg-[var(--surface-hover)];
   }
 
   .page-title {
-    @apply text-2xl text-white font-medium ml-2;
+    @apply text-lg font-medium;
   }
 
+  /* Project cards */
   .projects-grid {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16;
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
   }
 
   .project-card {
-    @apply bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 flex flex-col h-full;
+    @apply relative flex flex-col h-full overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-hover)];
   }
 
   .project-image-container {
-    @apply relative h-48 overflow-hidden bg-gray-100 flex items-center justify-center;
+    @apply relative h-48 overflow-hidden border-b border-[var(--border)] bg-[var(--bg)];
   }
 
   .project-image {
-    @apply transition-all duration-300;
+    @apply transition-transform duration-500;
+  }
+
+  .project-card:hover .project-image {
+    @apply scale-[1.03];
   }
 
   .project-overlay {
-    @apply absolute inset-0 bg-gradient-to-r from-[var(--android-dark)] to-[#0D1117] opacity-0 transition-all duration-300 flex items-center justify-center cursor-pointer;
-  }
-
-  .project-icon {
-    @apply w-6 h-6 text-[var(--android-green)] opacity-0 transition-all duration-300 scale-75;
-  }
-
-  .project-card:hover {
-    @apply -translate-y-3 scale-105 shadow-2xl rotate-1;
-  }
-
-  .project-card:hover .project-overlay {
-    @apply opacity-90;
-  }
-
-  .project-card:hover .project-icon {
-    @apply opacity-100 scale-100;
+    @apply absolute inset-0 z-10;
   }
 
   .project-content {
-    @apply p-6 transition-all duration-300 bg-gradient-to-b from-transparent to-gray-50 flex-grow flex flex-col;
-  }
-
-  .project-card:hover .project-content {
-    @apply bg-gradient-to-b from-transparent to-gray-100;
-  }
-
-  .project-title {
-    @apply text-xl font-bold text-[var(--android-dark)] mb-2;
-  }
-
-  .project-description {
-    @apply text-[var(--text-secondary)] text-sm mb-4 flex-grow;
+    @apply p-5 flex-grow flex flex-col;
   }
 
   .project-category {
-    @apply text-xs font-semibold uppercase tracking-wider text-[var(--android-green)] mb-1;
+    @apply text-xs font-medium uppercase tracking-wider text-[var(--accent)] mb-2;
+  }
+
+  .project-title {
+    @apply flex items-center gap-2 text-lg font-medium mb-2;
+  }
+
+  .project-title-icon {
+    @apply w-4 h-4 text-[var(--text-muted)] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5;
+  }
+
+  .project-description {
+    @apply text-sm text-[var(--text-muted)] mb-4 flex-grow;
   }
 
   .project-tags {
-    @apply flex flex-wrap gap-2 mt-auto;
+    @apply flex flex-wrap gap-1.5 mt-auto;
   }
 
   .project-tag {
-    @apply bg-[var(--android-dark)] text-white text-xs px-3 py-1 rounded-full font-medium;
+    @apply text-xs px-2 py-0.5 rounded-md border border-[var(--border)] text-[var(--text-muted)];
   }
 
   /* Contact Page */
-  .contact-container {
-    @apply min-h-screen bg-[var(--surface-light)] flex flex-col;
-  }
-
-  .contact-header {
-    @apply bg-[var(--android-dark)] py-6;
-  }
-
   .contact-content {
     @apply py-16;
   }
 
   .contact-grid {
-    @apply grid grid-cols-1 md:grid-cols-[1fr,2fr] gap-8 max-w-[1000px] mx-auto;
+    @apply grid grid-cols-1 md:grid-cols-[1fr,2fr] gap-4;
   }
 
-  .contact-info {
-    @apply bg-white rounded-2xl p-8 shadow-lg;
+  .contact-info, .contact-form {
+    @apply rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 md:p-8;
   }
 
   .contact-info-title {
-    @apply text-2xl font-bold text-[var(--android-dark)] mb-8;
+    @apply text-lg font-medium mb-6;
   }
 
   .contact-links {
-    @apply space-y-6;
+    @apply space-y-4;
   }
 
   .contact-link {
-    @apply flex items-center gap-4 text-[var(--text-primary)] transition-all duration-300 hover:text-[var(--android-green)] hover:translate-x-1;
+    @apply flex items-center gap-3 text-sm text-[var(--text-muted)] transition-colors hover:text-[var(--text)];
   }
 
   .contact-link-icon {
-    @apply w-6 h-6 text-[var(--android-green)];
-  }
-
-  .contact-form {
-    @apply bg-white rounded-2xl p-8 shadow-lg;
+    @apply w-5 h-5 shrink-0;
   }
 
   .form-group {
-    @apply relative mb-10;
+    @apply mb-4;
   }
 
   .form-input, .form-textarea {
-    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[var(--android-green)] focus:border-transparent transition-all duration-300;
+    @apply w-full px-4 py-3 rounded-lg border border-[var(--border)] bg-[var(--bg)] text-[var(--text)] placeholder:text-[var(--text-muted)] focus:outline-none focus:border-[var(--accent)] transition-colors;
   }
 
   .form-textarea {
-    @apply resize-none h-32;
+    @apply resize-none h-40;
   }
 
   .submit-button {
-    @apply w-full max-w-[250px] mx-auto bg-[var(--android-green)] text-[var(--android-dark)] font-medium py-4 px-8 rounded-xl hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-3 hover:-translate-y-1;
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-medium bg-[var(--text)] text-[var(--bg)] hover:bg-white transition-colors;
   }
 
   .submit-button-icon {
-    @apply w-5 h-5 transition-transform duration-300;
-  }
-
-  .submit-button:hover .submit-button-icon {
-    @apply translate-x-1 -rotate-[10deg];
+    @apply w-4 h-4;
   }
 }
 
-/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -302,70 +285,12 @@
   }
 }
 
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .animate-fade-up {
   animation: fadeInUp 0.6s ease forwards;
 }
 
-.animate-slide-left {
-  animation: slideInLeft 0.6s ease forwards;
-}
-
-/* Responsive */
-@media (max-width: 968px) {
-  .hero-section .container {
-    @apply grid-cols-1 text-center;
-  }
-
-  .intro-text {
-    @apply order-2;
-  }
-
-  .profile-section {
-    @apply order-1 mb-12 mt-16;
-  }
-
-  .description {
-    @apply mx-auto;
-  }
-
-  .cta-buttons {
-    @apply justify-center;
-  }
-
-  .name {
-    @apply text-4xl;
-  }
-
-  .title {
-    @apply text-2xl;
-  }
-
-  .hero-section {
-    @apply min-h-screen h-auto py-8;
-  }
-}
-
-@media (max-width: 480px) {
-  .cta-buttons {
-    @apply flex-col gap-4;
-  }
-
-  .profile-image {
-    @apply w-[220px] h-[220px];
-  }
-
-  .hero-section {
-    @apply pb-16;
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
   }
 }

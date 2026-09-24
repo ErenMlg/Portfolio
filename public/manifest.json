@@ -9,8 +9,8 @@
       "purpose": "any maskable"
     }
   ],
-  "theme_color": "#3DDC84",
-  "background_color": "#1a1a1a",
+  "theme_color": "#0b0c0e",
+  "background_color": "#0b0c0e",
   "start_url": "/Portfolio",
   "display": "standalone",
   "orientation": "portrait"

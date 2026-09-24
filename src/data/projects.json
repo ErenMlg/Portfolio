@@ -21,6 +21,7 @@
       },
       {
         "id": "10",
+        "featured": true,
         "category": "Web",
         "title": "Konsol Garaj",
         "description": "İstanbul'da ikinci el PlayStation alımı yapan işletme için hızlı, SEO odaklı web sitesi.",
@@ -30,6 +31,7 @@
       },
       {
         "id": "11",
+        "featured": true,
         "category": "AI",
         "title": "A.T.L.A.S",
         "description": "Uyandırma kelimesiyle açılan, Türkçe konuşan kişisel sesli asistan. Orkestratör altında mail ve araştırma ajanları çalışır, ses yerelde işlenir.",
@@ -39,6 +41,7 @@
       },
       {
         "id": "1",
+        "featured": true,
         "category": "Mobil",
         "title": "SoChic E Commerce XML & Compose Clone",
         "description": "SoChic E-Commerce, modern ve kullanıcı dostu bir online alışveriş platformu oluşturmak için geliştirilmiş kapsamlı bir projedir.",
@@ -106,6 +109,7 @@
       },
       {
         "id": "10",
+        "featured": true,
         "category": "Web",
         "title": "Konsol Garaj",
         "description": "Fast, SEO-focused website for a second-hand PlayStation buying business in Istanbul.",
@@ -115,6 +119,7 @@
       },
       {
         "id": "11",
+        "featured": true,
         "category": "AI",
         "title": "A.T.L.A.S",
         "description": "Wake-word activated, Turkish-speaking personal voice assistant. An orchestrator routes to mail and research agents; speech is processed locally.",
@@ -124,6 +129,7 @@
       },
       {
         "id": "1",
+        "featured": true,
         "category": "Mobile",
         "title": "SoChic E Commerce XML & Compose Clone",
         "description": "SoChic E-Commerce is a comprehensive project developed to create a modern and user-friendly online shopping platform.",
