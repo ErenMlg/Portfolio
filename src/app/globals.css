@@ -150,7 +150,7 @@
     @apply text-[var(--text-muted)];
   }
 
-  /* LinkedIn posts */
+  /* Blog */
   .post-card {
     @apply flex flex-col gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-hover)];
   }
@@ -159,12 +159,44 @@
     @apply text-xs text-[var(--text-muted)] tabular-nums;
   }
 
-  .post-excerpt {
-    @apply text-sm text-[var(--text)] flex-grow;
+  .post-title {
+    @apply text-lg font-medium leading-snug;
   }
 
-  .post-link {
-    @apply text-sm text-[var(--accent)];
+  .post-excerpt {
+    @apply text-sm text-[var(--text-muted)] flex-grow;
+  }
+
+  .article {
+    @apply max-w-[680px] mx-auto;
+  }
+
+  .article-title {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight mt-3 mb-5;
+  }
+
+  .article-paragraph {
+    @apply text-lg leading-8 text-[#c9ccd2] mb-6;
+  }
+
+  .article-heading {
+    @apply text-xl font-medium mt-10 mb-4;
+  }
+
+  .article-list {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 list-disc pl-5 text-[#c9ccd2] marker:text-[var(--accent)];
+  }
+
+  .article-links {
+    @apply space-y-2;
+  }
+
+  .article-links a, .article-original {
+    @apply text-[var(--accent)] hover:underline;
+  }
+
+  .article-original {
+    @apply inline-block mt-12 pt-6 border-t border-[var(--border)] w-full text-sm;
   }
 
   /* Page chrome (projects, contact) */

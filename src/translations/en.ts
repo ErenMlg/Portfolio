@@ -7,10 +7,6 @@ export const en = {
     contact: "Contact Me"
   },
   sections: {
-    posts: {
-      title: "From LinkedIn",
-      viewOnLinkedIn: "View on LinkedIn"
-    },
     featured: {
       title: "Selected Work",
       viewAll: "All projects"
@@ -32,6 +28,14 @@ export const en = {
         }
       ]
     }
+  },
+  blog: {
+    title: "Writing",
+    allPosts: "All posts",
+    backToBlog: "Back to posts",
+    highlights: "Tech stack",
+    links: "Links",
+    original: "Original post on LinkedIn"
   },
   projects: {
     title: "My Projects",

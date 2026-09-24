@@ -7,10 +7,6 @@ export const tr = {
     contact: "İletişime Geç"
   },
   sections: {
-    posts: {
-      title: "LinkedIn'den",
-      viewOnLinkedIn: "LinkedIn'de gör"
-    },
     featured: {
       title: "Öne Çıkan İşler",
       viewAll: "Tüm projeler"
@@ -32,6 +28,14 @@ export const tr = {
         }
       ]
     }
+  },
+  blog: {
+    title: "Yazılar",
+    allPosts: "Tüm yazılar",
+    backToBlog: "Yazılara dön",
+    highlights: "Kullanılan teknolojiler",
+    links: "Bağlantılar",
+    original: "LinkedIn'deki orijinal paylaşım"
   },
   projects: {
     title: "Projelerim",

@@ -9,17 +9,15 @@ import ProjectCard, { Project } from '@/components/ProjectCard';
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import projectsData from '@/data/projects.json';
-import postsData from '@/data/posts.json';
+import PostCard from '@/components/PostCard';
+import { posts } from '@/data/blog';
 
 export default function Home() {
   const [imageLoading, setImageLoading] = useState(true);
   const { t, language } = useLanguage();
   const currentRole = t.sections.experience.items[0];
   const featuredProjects = (projectsData[language].projects as Project[]).filter((p) => p.featured);
-  const latestPosts = [...postsData[language].posts]
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, 3);
-  const dateFormat = new Intl.DateTimeFormat(language === 'tr' ? 'tr-TR' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+  const latestPosts = posts.slice(0, 3);
 
   return (
     <main className="min-h-screen">
@@ -124,21 +122,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* LinkedIn Posts */}
+      {/* Blog */}
       <section className="home-section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">{t.sections.posts.title}</h2>
+            <h2 className="section-title">{t.blog.title}</h2>
+            <Link href="/blog" className="section-link">
+              {t.blog.allPosts} →
+            </Link>
           </div>
           <div className="projects-grid">
             {latestPosts.map((post) => (
-              <a key={post.id} href={post.link} target="_blank" rel="noopener noreferrer" className="post-card">
-                <time dateTime={post.date} className="post-date">
-                  {dateFormat.format(new Date(post.date))}
-                </time>
-                <p className="post-excerpt">{post.excerpt}</p>
-                <span className="post-link">{t.sections.posts.viewOnLinkedIn} ↗</span>
-              </a>
+              <PostCard key={post.slug} post={post} language={language} />
             ))}
           </div>
         </div>
