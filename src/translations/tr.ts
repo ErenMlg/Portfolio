@@ -7,6 +7,10 @@ export const tr = {
     contact: "İletişime Geç"
   },
   sections: {
+    posts: {
+      title: "LinkedIn'den",
+      viewOnLinkedIn: "LinkedIn'de gör"
+    },
     featured: {
       title: "Öne Çıkan İşler",
       viewAll: "Tüm projeler"

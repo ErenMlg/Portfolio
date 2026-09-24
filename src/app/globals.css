@@ -150,6 +150,23 @@
     @apply text-[var(--text-muted)];
   }
 
+  /* LinkedIn posts */
+  .post-card {
+    @apply flex flex-col gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-colors hover:border-[var(--border-strong)] hover:bg-[var(--surface-hover)];
+  }
+
+  .post-date {
+    @apply text-xs text-[var(--text-muted)] tabular-nums;
+  }
+
+  .post-excerpt {
+    @apply text-sm text-[var(--text)] flex-grow;
+  }
+
+  .post-link {
+    @apply text-sm text-[var(--accent)];
+  }
+
   /* Page chrome (projects, contact) */
   .page-container {
     @apply min-h-screen bg-[var(--bg)];

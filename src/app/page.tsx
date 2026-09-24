@@ -9,12 +9,17 @@ import ProjectCard, { Project } from '@/components/ProjectCard';
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import projectsData from '@/data/projects.json';
+import postsData from '@/data/posts.json';
 
 export default function Home() {
   const [imageLoading, setImageLoading] = useState(true);
   const { t, language } = useLanguage();
   const currentRole = t.sections.experience.items[0];
   const featuredProjects = (projectsData[language].projects as Project[]).filter((p) => p.featured);
+  const latestPosts = [...postsData[language].posts]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 3);
+  const dateFormat = new Intl.DateTimeFormat(language === 'tr' ? 'tr-TR' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 
   return (
     <main className="min-h-screen">
@@ -116,6 +121,26 @@ export default function Home() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* LinkedIn Posts */}
+      <section className="home-section">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">{t.sections.posts.title}</h2>
+          </div>
+          <div className="projects-grid">
+            {latestPosts.map((post) => (
+              <a key={post.id} href={post.link} target="_blank" rel="noopener noreferrer" className="post-card">
+                <time dateTime={post.date} className="post-date">
+                  {dateFormat.format(new Date(post.date))}
+                </time>
+                <p className="post-excerpt">{post.excerpt}</p>
+                <span className="post-link">{t.sections.posts.viewOnLinkedIn} ↗</span>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
     </main>

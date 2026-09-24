@@ -1,0 +1,22 @@
+{
+  "tr": {
+    "posts": [
+      {
+        "id": "7280582589407465472",
+        "date": "2025-01-02",
+        "excerpt": "Android dışında bir içerik: Next.js ve Node.js'e hakim olmadan, Cursor ile tek satır kod yazmadan kendi web sitemi oluşturdum. Yapay zeka destekli geliştirme araçlarının yazılımcılar için neden önemli olduğu üzerine düşüncelerim.",
+        "link": "https://www.linkedin.com/feed/update/urn:li:share:7280582589407465472"
+      }
+    ]
+  },
+  "en": {
+    "posts": [
+      {
+        "id": "7280582589407465472",
+        "date": "2025-01-02",
+        "excerpt": "Something outside Android: without knowing Next.js or Node.js, I built my own website with Cursor without writing a single line of code. My thoughts on why AI-assisted development tools matter for developers.",
+        "link": "https://www.linkedin.com/feed/update/urn:li:share:7280582589407465472"
+      }
+    ]
+  }
+}
