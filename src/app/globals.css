@@ -102,8 +102,8 @@
     @apply bg-transparent text-white border-2 border-[var(--android-green)] hover:bg-[var(--android-green)] hover:text-[var(--android-dark)] hover:shadow-[0_8px_30px_rgb(61,220,132,0.3)];
   }
 
-  /* Skills Section */
-  .skills-section {
+  /* Experience Section */
+  .experience-section {
     @apply py-24 bg-[var(--surface-light)];
   }
 
@@ -111,27 +111,27 @@
     @apply text-4xl font-bold text-center text-[var(--android-dark)] mb-16;
   }
 
-  .skills-grid {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto;
+  .experience-list {
+    @apply max-w-3xl mx-auto border-l-2 border-[var(--android-green)] space-y-10;
   }
 
-  .skill-card {
-    @apply bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center;
+  .experience-item {
+    @apply relative pl-8;
   }
 
-  .skill-icon {
-    @apply text-4xl text-[var(--android-green)] mb-6 transition-transform duration-300;
+  .experience-item::before {
+    @apply content-[''] absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-[var(--android-green)];
   }
 
-  .skill-card:hover .skill-icon {
-    @apply transform -translate-y-2 scale-110;
+  .experience-period {
+    @apply text-sm font-medium text-[var(--text-secondary)];
   }
 
-  .skill-card h3 {
-    @apply text-xl font-bold text-[var(--android-dark)] mb-2;
+  .experience-item h3 {
+    @apply text-xl font-bold text-[var(--android-dark)] mt-1 mb-2;
   }
 
-  .skill-card p {
+  .experience-item p {
     @apply text-[var(--text-secondary)];
   }
 
@@ -210,6 +210,10 @@
 
   .project-description {
     @apply text-[var(--text-secondary)] text-sm mb-4 flex-grow;
+  }
+
+  .project-category {
+    @apply text-xs font-semibold uppercase tracking-wider text-[var(--android-green)] mb-1;
   }
 
   .project-tags {

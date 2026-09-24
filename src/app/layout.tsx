@@ -10,8 +10,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Eren Mollaoğlu - Android Developer',
-  description: 'Mobil uygulama geliştirme konusunda tutkulu, yenilikçi çözümler üreten ve sürekli öğrenmeye odaklı bir yazılım geliştiricisi.',
+  title: 'Eren Mollaoğlu - Software Developer',
+  description: 'Kripto platformunda backend geliştiriyorum; mobil ve web tarafında da uçtan uca ürün çıkarıyorum.',
 };
 
 export default function RootLayout({
@@ -22,9 +22,9 @@ export default function RootLayout({
   return (
     <html lang="tr" className={`${poppins.variable}`}>
       <head>
-        <link rel="icon" type="image/svg+xml" href="/Portfolio/android-icon.svg" />
+        <link rel="icon" type="image/svg+xml" href="/Portfolio/code-icon.svg" />
         <link rel="alternate icon" href="/Portfolio/favicon.ico" />
-        <link rel="apple-touch-icon" href="/Portfolio/android-icon.svg" />
+        <link rel="apple-touch-icon" href="/Portfolio/code-icon.svg" />
         <link rel="manifest" href="/Portfolio/manifest.json" />
         <link
           rel="stylesheet"

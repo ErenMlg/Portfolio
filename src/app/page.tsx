@@ -69,35 +69,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="skills-section">
+      {/* Experience Section */}
+      <section className="experience-section">
         <div className="container">
           <h2 className="section-title">
-            {t.sections.skills.title}
+            {t.sections.experience.title}
           </h2>
-          <div className="skills-grid">
-            <div className="skill-card">
-              <div className="skill-icon">
-                <i className="fab fa-android"></i>
-              </div>
-              <h3>{t.sections.skills.android.title}</h3>
-              <p>{t.sections.skills.android.description}</p>
-            </div>
-            <div className="skill-card">
-              <div className="skill-icon">
-                <i className="fas fa-mobile-alt"></i>
-              </div>
-              <h3>{t.sections.skills.crossPlatform.title}</h3>
-              <p>{t.sections.skills.crossPlatform.description}</p>
-            </div>
-            <div className="skill-card">
-              <div className="skill-icon">
-                <i className="fas fa-brain"></i>
-              </div>
-              <h3>{t.sections.skills.ai.title}</h3>
-              <p>{t.sections.skills.ai.description}</p>
-            </div>
-          </div>
+          <ol className="experience-list">
+            {t.sections.experience.items.map((item) => (
+              <li key={item.period} className="experience-item">
+                <span className="experience-period">{item.period}</span>
+                <h3>{item.role} · {item.company}</h3>
+                <p>{item.description}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
     </main>
