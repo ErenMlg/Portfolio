@@ -12,7 +12,7 @@ export interface Project {
   featured?: boolean;
 }
 
-const DEFAULT_IMAGE = getImagePath('/projects/default.png');
+const DEFAULT_IMAGE = getImagePath('/projects/default.svg');
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (

@@ -22,13 +22,8 @@ export default function RootLayout({
     <html lang="tr" className={`${inter.variable}`}>
       <head>
         <link rel="icon" type="image/svg+xml" href="/Portfolio/code-icon.svg" />
-        <link rel="alternate icon" href="/Portfolio/favicon.ico" />
         <link rel="apple-touch-icon" href="/Portfolio/code-icon.svg" />
         <link rel="manifest" href="/Portfolio/manifest.json" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
       </head>
       <body className="font-sans">
         <ClientLayout>
