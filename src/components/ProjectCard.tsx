@@ -14,7 +14,7 @@ export interface Project {
 
 const DEFAULT_IMAGE = getImagePath('/projects/default.svg');
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({ project, priority = false }: { project: Project; priority?: boolean }) {
   return (
     <article className="project-card group">
       {project.link && (
@@ -33,6 +33,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           fill
           className="project-image object-cover object-top"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 360px"
+          priority={priority}
         />
       </div>
       <div className="project-content">

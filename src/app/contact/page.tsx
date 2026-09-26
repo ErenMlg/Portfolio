@@ -1,25 +1,17 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import LanguageSwitcher from '../../components/LanguageSwitcher';
-import LoadingSpinner from '../../components/LoadingSpinner';
 
 export default function ContactPage() {
-  const [isLanguageReady, setIsLanguageReady] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
   const { t } = useLanguage();
-
-  useEffect(() => {
-    if (t) {
-      setIsLanguageReady(true);
-    }
-  }, [t]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -36,10 +28,6 @@ export default function ContactPage() {
     )}`;
     window.location.href = mailtoLink;
   };
-
-  if (!isLanguageReady) {
-    return <div className="page-container"><LoadingSpinner /></div>;
-  }
 
   return (
     <div className="page-container">

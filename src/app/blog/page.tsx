@@ -27,8 +27,8 @@ export default function BlogPage() {
 
       <div className="container py-12">
         <div className="projects-grid">
-          {posts.map((post) => (
-            <PostCard key={post.slug} post={post} language={language} />
+          {posts.map((post, index) => (
+            <PostCard key={post.slug} post={post} language={language} priority={index < 3} />
           ))}
         </div>
       </div>

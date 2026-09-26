@@ -2,8 +2,6 @@
 
 import projectsData from '../../data/projects.json';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import LoadingSpinner from '../../components/LoadingSpinner';
 import ProjectCard, { Project } from '../../components/ProjectCard';
 import { useLanguage } from '../../context/LanguageContext';
 import LanguageSwitcher from '../../components/LanguageSwitcher';
@@ -20,20 +18,8 @@ interface ProjectsData {
 const typedProjectsData = projectsData as ProjectsData;
 
 export default function ProjectsPage() {
-  const [isLanguageReady, setIsLanguageReady] = useState(false);
   const { t, language } = useLanguage();
-
-  useEffect(() => {
-    if (language && t) {
-      setIsLanguageReady(true);
-    }
-  }, [language, t]);
-
   const localizedProjects = typedProjectsData[language].projects;
-
-  if (!isLanguageReady) {
-    return <div className="page-container"><LoadingSpinner /></div>;
-  }
 
   return (
     <div className="page-container">
@@ -53,8 +39,8 @@ export default function ProjectsPage() {
 
       <div className="container py-12">
         <div className="projects-grid">
-          {localizedProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {localizedProjects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} priority={index < 3} />
           ))}
         </div>
       </div>
