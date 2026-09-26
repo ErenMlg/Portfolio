@@ -2,9 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
 import { getImagePath } from '../../utils/imageUtils';
-import LoadingSpinner from '@/components/LoadingSpinner';
 import ProjectCard, { Project } from '@/components/ProjectCard';
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
@@ -13,7 +11,6 @@ import PostCard from '@/components/PostCard';
 import { posts } from '@/data/blog';
 
 export default function Home() {
-  const [imageLoading, setImageLoading] = useState(true);
   const { t, language } = useLanguage();
   const currentRole = t.sections.experience.items[0];
   const featuredProjects = (projectsData[language].projects as Project[]).filter((p) => p.featured);
@@ -50,13 +47,11 @@ export default function Home() {
           <div className="profile-section">
             <div className="profile-card">
               <div className="profile-image relative w-full aspect-square">
-                {imageLoading && <LoadingSpinner />}
                 <Image
                   src={getImagePath('/profile.jpg')}
                   alt={t.name}
                   fill
                   className="object-cover object-center"
-                  onLoadingComplete={() => setImageLoading(false)}
                   sizes="300px"
                   priority
                 />

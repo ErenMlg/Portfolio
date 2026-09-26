@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { getImagePath } from '../../utils/imageUtils';
 import { Post, formatPostDate } from '../data/blog';
 
-export default function PostCard({ post, language }: { post: Post; language: 'tr' | 'en' }) {
+export default function PostCard({ post, language, priority = false }: { post: Post; language: 'tr' | 'en'; priority?: boolean }) {
   const content = post[language];
 
   return (
@@ -15,6 +15,7 @@ export default function PostCard({ post, language }: { post: Post; language: 'tr
           fill
           className="project-image object-contain"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 360px"
+          priority={priority}
         />
       </div>
       <div className="project-content">
