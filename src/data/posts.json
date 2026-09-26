@@ -1,0 +1,329 @@
+{
+  "posts": [
+    {
+      "slug": "building-my-website-with-cursor",
+      "date": "2025-01-02",
+      "image": "/blog/building-my-website-with-cursor.jpg",
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:share:7280582589407465472",
+      "tags": [
+        "AI",
+        "Cursor",
+        "Next.js"
+      ],
+      "links": [
+        {
+          "label": "Portfolio",
+          "url": "https://erenmlg.github.io/Portfolio/"
+        }
+      ],
+      "tr": {
+        "title": "Tek satır kod yazmadan Cursor ile web sitemi yaptım",
+        "excerpt": "Next.js ve Node.js'e hakim olmadan, yapay zeka destekli editör Cursor ile kendi web sitemi oluşturdum.",
+        "body": [
+          "Bu sefer alışılagelmişin dışında, Android dışında bir içerikle karşınızdayım.",
+          "Hızla gelişen teknolojinin etkisiyle yapay zeka ve yapay zeka destekli sistemler oldukça ön plana çıkıyor. Biz yazılımcıların da bu değişime ayak uydurması gerektiğini düşünüyorum. Neyse ki bu süreçte yardımcı olabilecek birçok araç geliştiriliyor.",
+          "Bunlardan biri olan Cursor'u deneyimleme fırsatı buldum. Next.js ve Node.js gibi konularda çok fazla bilgim olmamasına rağmen, Cursor ile tek satır bile kod yazmadan kendi web sitemi oluşturmayı başardım.",
+          "Cursor sadece web sitesi oluşturmakla kalmıyor; karşılaşılan sorunlarda bir sohbet asistanı gibi yardımcı oluyor. Web geliştirme, mobil uygulama (Android/iOS) ve masaüstü uygulama geliştirme gibi pek çok alanda etkili bir çözüm sunuyor."
+        ]
+      },
+      "en": {
+        "title": "I built my website with Cursor without writing a line of code",
+        "excerpt": "Without much Next.js or Node.js experience, I built my own website using the AI-powered editor Cursor.",
+        "body": [
+          "This time I'm sharing something outside my usual Android content.",
+          "With technology moving this fast, AI and AI-assisted systems are taking center stage. I believe developers need to keep up with this shift, and fortunately a lot of tools are being built to help along the way.",
+          "One of them is Cursor, which I got to try out. Even though I didn't know much about Next.js or Node.js, I managed to build my own website with Cursor without writing a single line of code.",
+          "Cursor doesn't stop at building websites; it also helps like a chat assistant when you run into problems. It's effective across web development, mobile apps (Android/iOS) and desktop applications."
+        ]
+      }
+    },
+    {
+      "slug": "btk-hackathon-2024-motikoc",
+      "date": "2024-12-25",
+      "image": "/blog/btk-hackathon-2024-motikoc.jpg",
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7277646799157231616",
+      "tags": [
+        "Hackathon",
+        "AI",
+        "BTK Akademi"
+      ],
+      "links": [],
+      "tr": {
+        "title": "BTK Akademi Hackathon 2024: Motikoç ile derece",
+        "excerpt": "BTK Akademi Hackathon 2024'te geliştirdiğimiz Motikoç projesiyle dereceye girdik ve ödülümüzü Yapay Zeka Zirvesi'24'te aldık.",
+        "body": [
+          "BTK Akademi Hackathon 2024 yarışmasında Motikoç adında bir proje geliştirdik ve bu projeyle dereceye girdik.",
+          "Ankara'da BTK tarafından düzenlenen Yapay Zeka Zirvesi'24'e davet aldık; ödüllerimiz zirvede takdim edildi.",
+          "Başta ekip arkadaşım Emin Durmuş olmak üzere, destekleriyle yanımızda olan Atıl Samancıoğlu, Talha Kılıç, Google, BTK Akademi, Türkiye Girişimcilik Vakfı, Cemre Şirin ve bu yarışmayı düzenleyip bize bu imkanları sunan herkese teşekkür ederim."
+        ]
+      },
+      "en": {
+        "title": "BTK Akademi Hackathon 2024: placing with Motikoç",
+        "excerpt": "Our project Motikoç placed at BTK Akademi Hackathon 2024, and we received our award at the AI Summit '24.",
+        "body": [
+          "At the BTK Akademi Hackathon 2024 we built a project called Motikoç, and it earned us a place in the rankings.",
+          "We were invited to the AI Summit '24 organized by BTK in Ankara, where our awards were presented.",
+          "Many thanks to my teammate Emin Durmuş, and to Atıl Samancıoğlu, Talha Kılıç, Google, BTK Akademi, the Turkish Entrepreneurship Foundation, Cemre Şirin and everyone who organized the competition and made this possible."
+        ]
+      }
+    },
+    {
+      "slug": "multiple-input-collector-compose",
+      "date": "2024-11-21",
+      "image": "/blog/multiple-input-collector-compose.jpg",
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7265292222814638080",
+      "tags": [
+        "Jetpack Compose",
+        "Kotlin",
+        "Material 3"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ErenMlg/MultipleInputCollector"
+        }
+      ],
+      "tr": {
+        "title": "Jetpack Compose ile dinamik ilgi alanı seçici",
+        "excerpt": "BTK Hackathon'da 4.'lük alan Motikoç projesi için geliştirdiğim, dinamik önerili ilgi alanı seçme bileşeni.",
+        "body": [
+          "BTK Akademi Hackathon 2024'te 4.'lük ödülü kazanan Motikoç projesinin bir parçası olarak geliştirdiğim özel bir bileşeni paylaşıyorum.",
+          "Bileşen, kullanıcıların ilgi alanlarını dinamik önerilerle seçmesini sağlıyor ve sezgisel, etkileşimli bir deneyim sunuyor.",
+          "Proje, Jetpack Compose ve Material 3 gibi güncel teknolojileri uygulamak için iyi bir fırsat oldu."
+        ]
+      },
+      "en": {
+        "title": "A dynamic interest picker with Jetpack Compose",
+        "excerpt": "A custom component with dynamic suggestions for picking interests, built for Motikoç, which won 4th prize at BTK Hackathon.",
+        "body": [
+          "I'm sharing a custom component I built as part of the Motikoç project, which won 4th prize at the BTK Akademi Hackathon 2024.",
+          "The component lets users select their fields of interest with dynamic suggestions, creating an intuitive and interactive experience.",
+          "The project was a great opportunity to work with current technologies such as Jetpack Compose and Material 3."
+        ]
+      }
+    },
+    {
+      "slug": "eatzy-jetpack-compose-bootcamp",
+      "date": "2024-09-24",
+      "image": "/blog/eatzy-jetpack-compose-bootcamp.jpg",
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7244331642469634048",
+      "tags": [
+        "Jetpack Compose",
+        "MVI",
+        "Firebase"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ErenMlg/Eatzy"
+        }
+      ],
+      "tr": {
+        "title": "Eatzy: Jetpack Compose Bootcamp bitirme projesi",
+        "excerpt": "Techcareer.net ve Turkcell Global Bilgi iş birliğindeki Jetpack Compose Bootcamp için geliştirdiğim yemek siparişi uygulaması.",
+        "body": [
+          "Kasım Adalan'ın Techcareer.net ve Turkcell Global Bilgi iş birliğiyle düzenlediği Jetpack Compose Bootcamp programına katıldım. Programda her öğrenciden bir yemek siparişi uygulaması geliştirmesi bekleniyordu.",
+          "Proje ağırlıklı olarak Coroutines, Flow, MVVM ile birleştirilmiş MVI, Firebase ve ilgili teknolojilerin kullanımını gösteriyor."
+        ],
+        "highlights": [
+          "Jetpack Compose",
+          "Clean Architecture",
+          "MVVM + MVI",
+          "Coroutines",
+          "Navigation Components",
+          "Dependency Injection",
+          "Retrofit ve OkHttp",
+          "KSP",
+          "Firebase Auth ve Firestore",
+          "Material 3",
+          "Room",
+          "Coil",
+          "Figma"
+        ]
+      },
+      "en": {
+        "title": "Eatzy: my Jetpack Compose Bootcamp final project",
+        "excerpt": "A food delivery app built for the Jetpack Compose Bootcamp run with Techcareer.net and Turkcell Global Bilgi.",
+        "body": [
+          "I took part in the Jetpack Compose Bootcamp organized by Kasım Adalan together with Techcareer.net and Turkcell Global Bilgi. Every student was tasked with building a food delivery application.",
+          "The project mainly shows the use of Coroutines, Flow, MVI combined with MVVM, Firebase and related technologies."
+        ],
+        "highlights": [
+          "Jetpack Compose",
+          "Clean Architecture",
+          "MVVM + MVI",
+          "Coroutines",
+          "Navigation Components",
+          "Dependency Injection",
+          "Retrofit and OkHttp",
+          "KSP",
+          "Firebase Auth and Firestore",
+          "Material 3",
+          "Room",
+          "Coil",
+          "Figma"
+        ]
+      }
+    },
+    {
+      "slug": "vertical-scrollable-popup-compose-multiplatform",
+      "date": "2024-08-21",
+      "image": "/blog/vertical-scrollable-popup-compose-multiplatform.jpg",
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7231980511768805376",
+      "tags": [
+        "Compose Multiplatform",
+        "Kotlin",
+        "UI"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ErenMlg/UniqueVerticalSelectionPopUp"
+        }
+      ],
+      "tr": {
+        "title": "Compose Multiplatform için dikey kaydırmalı pop-up",
+        "excerpt": "Compose Multiplatform projelerinde kullanılabilen, dikey kaydırmalı özel bir seçim dialog'u.",
+        "body": [
+          "Compose Multiplatform ile çalışmanın en keyifli yanlarından biri, farklı platformlarda akıcı ve güzel arayüzler oluşturabilmek.",
+          "Compose Multiplatform projelerinde kullanabileceğiniz, dikey kaydırmalı bir pop-up dialog geliştirdim. Kod, tasarım ya da işlevsellik hakkındaki geri bildirimlerinizi duymaktan memnuniyet duyarım."
+        ]
+      },
+      "en": {
+        "title": "A vertical scrollable pop-up for Compose Multiplatform",
+        "excerpt": "A custom vertical scrollable selection dialog you can drop into Compose Multiplatform projects.",
+        "body": [
+          "One of the joys of working with Compose Multiplatform is building smooth, good-looking UI across platforms.",
+          "I built a vertical scrollable pop-up dialog you can use in Compose Multiplatform projects. Feedback on the code, design or functionality is always welcome."
+        ]
+      }
+    },
+    {
+      "slug": "navigation-helper-popup",
+      "date": "2024-08-20",
+      "image": "/blog/navigation-helper-popup.jpg",
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7231570001722265601",
+      "tags": [
+        "Android",
+        "Kotlin",
+        "Navigation"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/ErenMlg/NavigationHelperPopUp"
+        }
+      ],
+      "tr": {
+        "title": "Çok ekranlı uygulamalar için harita gibi navigasyon dialog'u",
+        "excerpt": "Kullanıcının hangi sayfada olduğunu ve oraya hangi yoldan geldiğini gösteren, tıklanabilir bir navigasyon pop-up'ı.",
+        "body": [
+          "Bu projede, çok sayıda ekranı olan uygulamalarda kullanıcının hangi sayfada olduğunu ve bu sayfaya hangi yoldan geldiğini gösteren, harita görünümünde bir dialog tasarladım.",
+          "Kullanıcı aynı zamanda dialog üzerindeki butonlara tıklayarak ilgili sayfaya doğrudan gidebiliyor."
+        ]
+      },
+      "en": {
+        "title": "A map-like navigation dialog for apps with many screens",
+        "excerpt": "A clickable navigation pop-up that shows which page the user is on and the path they took to get there.",
+        "body": [
+          "In this project I designed a map-like dialog for apps with many screens: it shows which page the user is on and which path they took to reach it.",
+          "Users can also tap the buttons in the dialog to jump straight to that page."
+        ]
+      }
+    },
+    {
+      "slug": "proguard-vs-r8",
+      "date": "2024-08-14",
+      "image": "",
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:share:7229407667742457856",
+      "tags": [
+        "Android",
+        "ProGuard",
+        "R8"
+      ],
+      "links": [
+        {
+          "label": "Medium",
+          "url": "https://medium.com/@eren.mollaoglu/what-is-proguard-r8-differences-c229fbe307c9"
+        }
+      ],
+      "tr": {
+        "title": "ProGuard ve R8 arasındaki farklar",
+        "excerpt": "ProGuard ile R8'in farklarını ve kullanımlarını kod örnekleriyle anlattığım Medium yazısı.",
+        "body": [
+          "ProGuard ve R8'in farklarını ve kullanımlarını kod örnekleriyle birlikte anlattığım yazım Medium'da yayında."
+        ]
+      },
+      "en": {
+        "title": "ProGuard vs R8: the differences",
+        "excerpt": "My Medium article explaining ProGuard vs R8 and how to use them, with code examples.",
+        "body": [
+          "My article explaining the differences between ProGuard and R8, and how to use them with code examples, is up on Medium."
+        ]
+      }
+    },
+    {
+      "slug": "one-piece-android-and-api",
+      "date": "2024-04-19",
+      "image": "/blog/one-piece-android-and-api.jpg",
+      "linkedin": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7187009687207165952",
+      "tags": [
+        "Android",
+        "MVVM",
+        "REST API"
+      ],
+      "links": [
+        {
+          "label": "Android (GitHub)",
+          "url": "https://github.com/ErenMlg/OnePieceAndroid"
+        },
+        {
+          "label": "API (GitHub)",
+          "url": "https://github.com/ErenMlg/OnePieceAPI"
+        }
+      ],
+      "tr": {
+        "title": "One Piece: Android uygulaması ve kendi API'si",
+        "excerpt": "MVVM, Coroutines ve Flow'u pekiştirmek için geliştirdiğim, verisini kendi yazdığım API'den alan anime uygulaması.",
+        "body": [
+          "One Piece'e dayanan bir anime uygulamasının reposunu yayınladım. Bu reponun temel amacı MVVM, Coroutines, Flow ve ilgili teknolojileri daha iyi kavramaktı.",
+          "Uygulamanın veri kaynağı, kendim yazdığım yerel bir API."
+        ],
+        "highlights": [
+          "MVVM ve Clean Architecture",
+          "Coroutines",
+          "Navigation Components",
+          "Hilt ile Dependency Injection",
+          "Retrofit ve OkHttp",
+          "Picasso",
+          "Room",
+          "Lottie",
+          "Media3 ExoPlayer",
+          "KSP",
+          "Custom View'lar"
+        ]
+      },
+      "en": {
+        "title": "One Piece: an Android app with its own API",
+        "excerpt": "An anime app built to deepen my grasp of MVVM, Coroutines and Flow, backed by an API I wrote myself.",
+        "body": [
+          "I released the repository for an anime app based on One Piece. The main goal was to deepen my understanding of MVVM, Coroutines, Flow and related technologies.",
+          "The app's data comes from a custom local API that I wrote myself."
+        ],
+        "highlights": [
+          "MVVM with Clean Architecture",
+          "Coroutines",
+          "Navigation Components",
+          "Hilt for Dependency Injection",
+          "Retrofit and OkHttp",
+          "Picasso",
+          "Room",
+          "Lottie",
+          "Media3 ExoPlayer",
+          "KSP",
+          "Custom Views"
+        ]
+      }
+    }
+  ]
+}

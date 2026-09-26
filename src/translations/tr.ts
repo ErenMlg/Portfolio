@@ -1,28 +1,41 @@
 export const tr = {
-  greeting: "Merhaba, Ben",
   name: "Eren Mollaoğlu",
-  title: "Jr. Software Developer",
-  description: "Mobil uygulama geliştirme konusunda tutkulu, yenilikçi çözümler üreten ve sürekli öğrenmeye odaklı bir yazılım geliştiricisi.",
+  title: "Software Developer",
+  description: "Kripto platformunda backend geliştiriyorum; mobil ve web tarafında da uçtan uca ürün çıkarıyorum.",
   buttons: {
     projects: "Projelerimi Gör",
     contact: "İletişime Geç"
   },
   sections: {
-    skills: {
-      title: "Uzmanlık Alanlarım",
-      android: {
-        title: "Android Geliştirme",
-        description: "Kotlin, Jetpack Compose, XML, Multiplatform"
-      },
-      crossPlatform: {
-        title: "Devops",
-        description: "Kubernetes, Gitlab, CI/CD, Docker, Prometheus, Grafana, New Relic"
-      },
-      ai: {
-        title: "Yapay Zeka",
-        description: "TensorFlow, Keras, HuggingFace, Python"
-      }
+    featured: {
+      title: "Öne Çıkan İşler",
+      viewAll: "Tüm projeler"
+    },
+    experience: {
+      title: "Deneyim",
+      items: [
+        {
+          period: "Ağustos 2025 – Günümüz",
+          role: "Backend Developer",
+          company: "Kripto Platformu",
+          description: "Kripto platformunun backend servislerini geliştiriyorum."
+        },
+        {
+          period: "Şubat 2025 – Ağustos 2025",
+          role: "DevOps Engineer",
+          company: "Boyner",
+          description: "Kubernetes, GitLab CI/CD, Docker, Prometheus, Grafana, New Relic"
+        }
+      ]
     }
+  },
+  blog: {
+    title: "Yazılar",
+    allPosts: "Tüm yazılar",
+    backToBlog: "Yazılara dön",
+    highlights: "Kullanılan teknolojiler",
+    links: "Bağlantılar",
+    original: "LinkedIn'deki orijinal paylaşım"
   },
   projects: {
     title: "Projelerim",

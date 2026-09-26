@@ -1,28 +1,41 @@
 export const en = {
-  greeting: "Hello, I'm",
   name: "Eren Mollaoğlu",
-  title: "Jr. Software Developer",
-  description: "A passionate software developer focused on creating innovative solutions in mobile app development and continuously learning.",
+  title: "Software Developer",
+  description: "I build backend services for a crypto platform and ship end-to-end products on mobile and web.",
   buttons: {
     projects: "View Projects",
     contact: "Contact Me"
   },
   sections: {
-    skills: {
-      title: "My Expertise",
-      android: {
-        title: "Android Development",
-        description: "Kotlin, Jetpack Compose, XML, Multiplatform"
-      },
-      crossPlatform: {
-        title: "Devops Engineer",
-        description: "Kubernetes, Gitlab, CI/CD, Docker, Prometheus, Grafana, New Relic"
-      },
-      ai: {
-        title: "Artificial Intelligence",
-        description: "TensorFlow, Keras, HuggingFace, Python"
-      }
+    featured: {
+      title: "Selected Work",
+      viewAll: "All projects"
+    },
+    experience: {
+      title: "Experience",
+      items: [
+        {
+          period: "August 2025 – Present",
+          role: "Backend Developer",
+          company: "Crypto Platform",
+          description: "Building the backend services of a crypto platform."
+        },
+        {
+          period: "February 2025 – August 2025",
+          role: "DevOps Engineer",
+          company: "Boyner",
+          description: "Kubernetes, GitLab CI/CD, Docker, Prometheus, Grafana, New Relic"
+        }
+      ]
     }
+  },
+  blog: {
+    title: "Writing",
+    allPosts: "All posts",
+    backToBlog: "Back to posts",
+    highlights: "Tech stack",
+    links: "Links",
+    original: "Original post on LinkedIn"
   },
   projects: {
     title: "My Projects",
