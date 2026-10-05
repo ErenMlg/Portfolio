@@ -40,6 +40,51 @@
         "tags": ["Python", "LLM", "Multi-Agent", "Whisper", "Gmail API"]
       },
       {
+        "id": "12",
+        "category": "AI",
+        "title": "Flutter Performance Tester",
+        "description": "Flutter uygulamasındaki takılmaları gerçek Android cihazda ölçen Claude Code skill'i. Ekran ekran düşen kareleri ölçer, nedeni timeline kanıtıyla doğrular ve düzeltme prompt'ları içeren bir HTML rapor üretir.",
+        "image": "",
+        "link": "https://github.com/ErenMlg/erenmlg-flutter-performance",
+        "tags": ["Claude Code", "Flutter", "Dart", "Performance", "Android"]
+      },
+      {
+        "id": "13",
+        "category": "AI",
+        "title": "App Store Pro",
+        "description": "Bir mobil uygulama projesinden App Store ve Google Play'in istediği her şeyi üreten Claude Code skill'i: mağaza metinleri, gizlilik sayfası, cihaz çerçeveli ekran görüntüleri ve uygulamanın kendisinden kaydedilen tanıtım videoları.",
+        "image": "",
+        "link": "https://github.com/ErenMlg/erenmlg-app-store-pro",
+        "tags": ["Claude Code", "JavaScript", "HyperFrames", "ADB", "ASO"]
+      },
+      {
+        "id": "14",
+        "category": "Mobil",
+        "title": "Budget Analyser",
+        "description": "Maaş döngüsüne göre çalışan, çevrimdışı bütçe takip uygulaması. Kredi kartı taksitleri, cihaz üzerinde fiş okuma, döviz ve altın kurları, grafikli analizler ve 10 dil desteği sunar.",
+        "image": "",
+        "link": "",
+        "tags": ["Flutter", "Dart", "SQLite", "ML Kit", "fl_chart"]
+      },
+      {
+        "id": "15",
+        "category": "Mobil",
+        "title": "ReWord",
+        "description": "Yabancı dilde kelime ezberleme uygulaması. Kelimenin anlamını yazar ya da seçersin, bütün hâllerini ve örnek cümlesini görürsün, kartı kaydırarak işaretlersin; kelimeler renklerine göre cam fanuslarda birikir.",
+        "image": "",
+        "link": "",
+        "tags": ["Flutter", "Dart", "Supabase", "Gemini", "CustomPaint"]
+      },
+      {
+        "id": "16",
+        "category": "Otomasyon",
+        "title": "PS5 İlan Takip Botu",
+        "description": "İkinci el pazar yerlerindeki herkese açık PlayStation 5 ilanlarını takip edip yeni ilan çıktığında Telegram'a bildirim gönderen kişisel bot. Giriş gerektiren veriye erişmez; siteyi yormamak için 90-120 saniyede bir istek atar, geceleri durur ve erişim kısıtlandığında beklemeye geçer.",
+        "image": "",
+        "link": "",
+        "tags": ["Node.js", "JavaScript", "Chrome DevTools Protocol", "Telegram Bot API"]
+      },
+      {
         "id": "1",
         "featured": true,
         "category": "Mobil",
@@ -126,6 +171,51 @@
         "image": "/projects/atlas.jpg",
         "link": "",
         "tags": ["Python", "LLM", "Multi-Agent", "Whisper", "Gmail API"]
+      },
+      {
+        "id": "12",
+        "category": "AI",
+        "title": "Flutter Performance Tester",
+        "description": "Claude Code skill that measures jank in a Flutter app on a real Android device. It measures dropped frames screen by screen, confirms causes with timeline evidence and writes an HTML report with fix prompts.",
+        "image": "",
+        "link": "https://github.com/ErenMlg/erenmlg-flutter-performance",
+        "tags": ["Claude Code", "Flutter", "Dart", "Performance", "Android"]
+      },
+      {
+        "id": "13",
+        "category": "AI",
+        "title": "App Store Pro",
+        "description": "Claude Code skill that turns a mobile app project into everything the App Store and Google Play ask for: listing text, a privacy page, framed screenshots and store videos recorded from the real app.",
+        "image": "",
+        "link": "https://github.com/ErenMlg/erenmlg-app-store-pro",
+        "tags": ["Claude Code", "JavaScript", "HyperFrames", "ADB", "ASO"]
+      },
+      {
+        "id": "14",
+        "category": "Mobile",
+        "title": "Budget Analyser",
+        "description": "Offline budget tracker built around the pay cycle. Credit card instalments, on-device receipt scanning, currency and gold rates, chart-based insights and 10 languages.",
+        "image": "",
+        "link": "",
+        "tags": ["Flutter", "Dart", "SQLite", "ML Kit", "fl_chart"]
+      },
+      {
+        "id": "15",
+        "category": "Mobile",
+        "title": "ReWord",
+        "description": "Vocabulary app for learning words in a new language. Type or pick the meaning, see every form and an example sentence, then swipe to rate the word; words collect in colored glass jars.",
+        "image": "",
+        "link": "",
+        "tags": ["Flutter", "Dart", "Supabase", "Gemini", "CustomPaint"]
+      },
+      {
+        "id": "16",
+        "category": "Automation",
+        "title": "PS5 Listing Alert Bot",
+        "description": "Personal bot that watches public PlayStation 5 listings on second-hand marketplaces and sends a Telegram alert when a new one appears. It reads no login-gated data, polls only every 90-120 seconds, pauses overnight and backs off when a site restricts access.",
+        "image": "",
+        "link": "",
+        "tags": ["Node.js", "JavaScript", "Chrome DevTools Protocol", "Telegram Bot API"]
       },
       {
         "id": "1",
